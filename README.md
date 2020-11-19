@@ -1,5 +1,6 @@
 # math513playstationxbox
 
+X---------------------------- Completed: ------------------------------X
 
 tweet volume over time -> tweet volume regarding both platforms follows a similar trend 
 
