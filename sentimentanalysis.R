@@ -72,5 +72,22 @@ platform_sentiment %>% group_by(platform) %>% summarise(rows = n())
 t.test(score ~platform, data = platform_sentiment, var.equal = TRUE)
 
 
+#ttest is the mean of playstation less than the mean of xbox
+t.test(score ~platform, data = platform_sentiment, var.equal = TRUE,
+       alternative = "less")
 
+
+
+#one sample t.test for each platform. compare sentiment distribution
+#with a dist of 0 
+Xbox_scores <- platform_sentiment %>% filter(platform == "Xbox_X") %>%
+  select(score)
+
+playstation_scores <- platform_sentiment %>% filter(platform == "Playstation") %>%
+  select(score)
+
+#both are obviously not actually neutral in their sentiments and
+#are statistically significant 
+t.test(Xbox_scores$score, mu = 0)
+t.test(playstation_scores, mu = 0)
 
