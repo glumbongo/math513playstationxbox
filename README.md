@@ -10,7 +10,7 @@ twitter users by country due to the bias we have introduced with filtering ----C
 
 posting frequency of playstation and xbox marketing accounts -> xbox begins to 
 post much more heavily on the run up to release ----CLEANUP STAGE 
-
+
 sentiment scores for both playstation and xbox -> t-tested. xbox has a more positive overall sentiment than playstation
 but both are positive. ----CLEANUP STAGE 
 
@@ -26,7 +26,11 @@ neutral twitter opinion?  ----CLEANUP STAGE
 X----------------------------TO DO: ------------------------------X
 
  
-volume of tweets based on game name. - Which games are being talked about the most and which genre are they in?
+GRIFFIN - volume of tweets based on game name. - Which games are being talked about the most and which genre are they in?
+- Maybe just use games that have already been released and are exclusive to a platform by finding a list online.
+the number of games should be low. Use aliases of the games in order to get more tweet results after filtering. 
+
+
 
 CHRIS-- sentiment over time compared to posting frequency of xbox and playstation marketing accounts. - Which company is having a 
 greater impact with their marketing?  LINEAR REGRESSION MODEL 
