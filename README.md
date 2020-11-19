@@ -1,38 +1,40 @@
 # math513playstationxbox
 
-X---------------------------- Completed: ------------------------------X
+X---------------------------- Completed/CLEANUP STAGE: ------------------------------X
 
 tweet volume over time -> tweet volume regarding both platforms follows a similar trend 
+----CLEANUP STAGE 
 
 tweets by country -> only conclusion to draw is that theyre almost evenly popular acorss 
-twitter users by country due to the bias we have introduced with filtering
+twitter users by country due to the bias we have introduced with filtering ----CLEANUP STAGE 
 
 posting frequency of playstation and xbox marketing accounts -> xbox begins to 
-post much more heavily on the run up to release
-
+post much more heavily on the run up to release ----CLEANUP STAGE 
+
 sentiment scores for both playstation and xbox -> t-tested. xbox has a more positive overall sentiment than playstation
-but both are positive.
+but both are positive. ----CLEANUP STAGE 
 
 games to be released by genre in the next 2 years -> identify gaps in the market on each platform 
+----CLEANUP STAGE 
 
+sentiment over time for both playstation and xbox. - What are the trends in sentiment for each platform?
+LINEAR REGRESSION MODEL  ----CLEANUP STAGE
+
+t-tests of sentiment scores compared with neutral data. - are our results statistically significant when compared with a
+neutral twitter opinion?  ----CLEANUP STAGE 
 
 X----------------------------TO DO: ------------------------------X
 
-t-tests of sentiment scores compared with neutral data. - are our results statistically significant when compared with a
-neutral twitter opinion?
-
+ 
 volume of tweets based on game name. - Which games are being talked about the most and which genre are they in?
 
-sentiment over time for both playstation and xbox. - What are the trends in sentiment for each platform?
-LINEAR REGRESSION MODEL 
-
-sentiment over time compared to posting frequency of xbox and playstation marketing accounts. - Which company is having a 
-greater impact with their marketing?  LINEAR REGRESSION MODEL
+CHRIS-- sentiment over time compared to posting frequency of xbox and playstation marketing accounts. - Which company is having a 
+greater impact with their marketing?  LINEAR REGRESSION MODEL 
 
 sentiment of tweets based on mention of game organised into genre. - Which games are getting the most positive 
 reaction and which system are they on?
 
-word cloud for each system to identify talking points - what are the main topics that will influence platform purchase?
+GRIFFIN-- word cloud for each system to identify talking points - what are the main topics that will influence platform purchase?
 
 
 
