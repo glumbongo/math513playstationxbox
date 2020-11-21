@@ -23,19 +23,21 @@ LINEAR REGRESSION MODEL  ----CLEANUP STAGE
 t-tests of sentiment scores compared with neutral data. - are our results statistically significant when compared with a
 neutral twitter opinion?  ----CLEANUP STAGE 
 
+CHRIS-- sentiment over time compared to posting frequency of xbox and playstation marketing accounts. - Which company is having a 
+greater impact with their marketing?  LINEAR REGRESSION MODEL ----CLEANUP STAGE
+-> no substantial correlation between marketing posts by official accounts and change in sentiment on twitter. can suggest that
+marketing is not having a substantial effect on consumer opinion 
+
+
 X----------------------------TO DO: ------------------------------X
 
+sentiment of tweets based on keywords or identified purchase factors such as price, hardware specs, games selection 
  
 GRIFFIN - volume of tweets based on game name. - Which games are being talked about the most and which genre are they in?
 - Maybe just use games that have already been released and are exclusive to a platform by finding a list online.
 the number of games should be low. Use aliases of the games in order to get more tweet results after filtering. 
 
-
-
-CHRIS-- sentiment over time compared to posting frequency of xbox and playstation marketing accounts. - Which company is having a 
-greater impact with their marketing?  LINEAR REGRESSION MODEL 
-
-sentiment of tweets based on mention of game organised into genre. - Which games are getting the most positive 
+ELIS-- sentiment of tweets based on mention of game organised into genre. - Which games are getting the most positive 
 reaction and which system are they on?
 
 GRIFFIN-- word cloud for each system to identify talking points - what are the main topics that will influence platform purchase?
