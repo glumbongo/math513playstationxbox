@@ -1,0 +1,4066 @@
+{
+    "error": "OK",
+    "limit": 100,
+    "offset": 0,
+    "number_of_page_results": 100,
+    "number_of_total_results": 173,
+    "status_code": 1,
+    "results": [
+        {
+            "aliases": "GOW3\nGOW III\nGod of War 3",
+            "id": 20461,
+            "name": "God of War III",
+            "original_release_date": "2010-03-16",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-35/",
+                    "id": 35,
+                    "name": "PlayStation 3",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-3/3045-35/",
+                    "abbreviation": "PS3"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 20716,
+            "name": "Braid",
+            "original_release_date": "2008-08-06",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-17/",
+                    "id": 17,
+                    "name": "Mac",
+                    "site_detail_url": "https://www.giantbomb.com/mac/3045-17/",
+                    "abbreviation": "MAC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-86/",
+                    "id": 86,
+                    "name": "Xbox 360 Games Store",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-360-games-store/3045-86/",
+                    "abbreviation": "XBGS"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-88/",
+                    "id": 88,
+                    "name": "PlayStation Network (PS3)",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-network-ps3/3045-88/",
+                    "abbreviation": "PS3N"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-152/",
+                    "id": 152,
+                    "name": "Linux",
+                    "site_detail_url": "https://www.giantbomb.com/linux/3045-152/",
+                    "abbreviation": "LIN"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": "Minecraft Xbox One Edition\r\nMinecraft Xbox 360 Edition",
+            "id": 30475,
+            "name": "Minecraft",
+            "original_release_date": "2011-11-18",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-17/",
+                    "id": 17,
+                    "name": "Mac",
+                    "site_detail_url": "https://www.giantbomb.com/mac/3045-17/",
+                    "abbreviation": "MAC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-20/",
+                    "id": 20,
+                    "name": "Xbox 360",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-360/3045-20/",
+                    "abbreviation": "X360"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-35/",
+                    "id": 35,
+                    "name": "PlayStation 3",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-3/3045-35/",
+                    "abbreviation": "PS3"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-86/",
+                    "id": 86,
+                    "name": "Xbox 360 Games Store",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-360-games-store/3045-86/",
+                    "abbreviation": "XBGS"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-88/",
+                    "id": 88,
+                    "name": "PlayStation Network (PS3)",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-network-ps3/3045-88/",
+                    "abbreviation": "PS3N"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-96/",
+                    "id": 96,
+                    "name": "iPhone",
+                    "site_detail_url": "https://www.giantbomb.com/iphone/3045-96/",
+                    "abbreviation": "IPHN"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-121/",
+                    "id": 121,
+                    "name": "iPad",
+                    "site_detail_url": "https://www.giantbomb.com/ipad/3045-121/",
+                    "abbreviation": "IPAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-123/",
+                    "id": 123,
+                    "name": "Android",
+                    "site_detail_url": "https://www.giantbomb.com/android/3045-123/",
+                    "abbreviation": "ANDR"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-124/",
+                    "id": 124,
+                    "name": "Windows Phone",
+                    "site_detail_url": "https://www.giantbomb.com/windows-phone/3045-124/",
+                    "abbreviation": "WP"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-129/",
+                    "id": 129,
+                    "name": "PlayStation Vita",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-vita/3045-129/",
+                    "abbreviation": "VITA"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-139/",
+                    "id": 139,
+                    "name": "Wii U",
+                    "site_detail_url": "https://www.giantbomb.com/wii-u/3045-139/",
+                    "abbreviation": "WiiU"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-140/",
+                    "id": 140,
+                    "name": "Browser",
+                    "site_detail_url": "https://www.giantbomb.com/browser/3045-140/",
+                    "abbreviation": "BROW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-143/",
+                    "id": 143,
+                    "name": "PlayStation Network (Vita)",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-network-vita/3045-143/",
+                    "abbreviation": "PSNV"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-152/",
+                    "id": 152,
+                    "name": "Linux",
+                    "site_detail_url": "https://www.giantbomb.com/linux/3045-152/",
+                    "abbreviation": "LIN"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-155/",
+                    "id": 155,
+                    "name": "Amazon Fire TV",
+                    "site_detail_url": "https://www.giantbomb.com/amazon-fire-tv/3045-155/",
+                    "abbreviation": "FIRE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-156/",
+                    "id": 156,
+                    "name": "New Nintendo 3DS",
+                    "site_detail_url": "https://www.giantbomb.com/new-nintendo-3ds/3045-156/",
+                    "abbreviation": "N3DS"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 32327,
+            "name": "S.T.A.L.K.E.R. 2",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "Grand Theft Auto Five\r\nGTAV\r\nGTA5\r\nGTA V\r\nGTA 5\r\nGTA Online\r\nGrand Theft Auto Online",
+            "id": 36765,
+            "name": "Grand Theft Auto V",
+            "original_release_date": "2013-09-17",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-20/",
+                    "id": 20,
+                    "name": "Xbox 360",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-360/3045-20/",
+                    "abbreviation": "X360"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-35/",
+                    "id": 35,
+                    "name": "PlayStation 3",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-3/3045-35/",
+                    "abbreviation": "PS3"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-86/",
+                    "id": 86,
+                    "name": "Xbox 360 Games Store",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-360-games-store/3045-86/",
+                    "abbreviation": "XBGS"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-88/",
+                    "id": 88,
+                    "name": "PlayStation Network (PS3)",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-network-ps3/3045-88/",
+                    "abbreviation": "PS3N"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 37030,
+            "name": "Fortnite",
+            "original_release_date": "2017-07-25",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-17/",
+                    "id": 17,
+                    "name": "Mac",
+                    "site_detail_url": "https://www.giantbomb.com/mac/3045-17/",
+                    "abbreviation": "MAC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-96/",
+                    "id": 96,
+                    "name": "iPhone",
+                    "site_detail_url": "https://www.giantbomb.com/iphone/3045-96/",
+                    "abbreviation": "IPHN"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-121/",
+                    "id": 121,
+                    "name": "iPad",
+                    "site_detail_url": "https://www.giantbomb.com/ipad/3045-121/",
+                    "abbreviation": "IPAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-123/",
+                    "id": 123,
+                    "name": "Android",
+                    "site_detail_url": "https://www.giantbomb.com/android/3045-123/",
+                    "abbreviation": "ANDR"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "Elder Scrolls: Online\r\nTESO\r\nESO\r\nElder Scrolls MMO\r\nThe Elder Scrolls Online: Tamriel Unlimited",
+            "id": 38206,
+            "name": "The Elder Scrolls Online",
+            "original_release_date": "2014-04-04",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-17/",
+                    "id": 17,
+                    "name": "Mac",
+                    "site_detail_url": "https://www.giantbomb.com/mac/3045-17/",
+                    "abbreviation": "MAC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "Cyberpunk 77",
+            "id": 38456,
+            "name": "Cyberpunk 2077",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-175/",
+                    "id": 175,
+                    "name": "Google Stadia",
+                    "site_detail_url": "https://www.giantbomb.com/google-stadia/3045-175/",
+                    "abbreviation": "STAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 38788,
+            "name": "Warframe",
+            "original_release_date": "2013-03-25",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "The Witcher III: Wild Hunt",
+            "id": 41484,
+            "name": "The Witcher 3: Wild Hunt",
+            "original_release_date": "2015-05-19",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 44656,
+            "name": "No Man's Sky",
+            "original_release_date": "2016-08-09",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "Halo MCC",
+            "id": 46552,
+            "name": "Halo: The Master Chief Collection",
+            "original_release_date": "2014-11-11",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 46562,
+            "name": "Tom Clancy's Rainbow Six Siege",
+            "original_release_date": "2015-12-01",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 48422,
+            "name": "Lords of the Fallen 2",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "Twelve Minutes",
+            "id": 48975,
+            "name": "12 Minutes",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "RB4",
+            "id": 49077,
+            "name": "Rock Band 4",
+            "original_release_date": "2015-10-06",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 49967,
+            "name": "For Honor",
+            "original_release_date": "2017-02-14",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "Planet Coaster: Console Edition",
+            "id": 50018,
+            "name": "Planet Coaster",
+            "original_release_date": "2016-11-17",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "Prey for the Gods",
+            "id": 51281,
+            "name": "Praey for the Gods",
+            "original_release_date": "2019-01-31",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 51965,
+            "name": "Little Devil Inside",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-17/",
+                    "id": 17,
+                    "name": "Mac",
+                    "site_detail_url": "https://www.giantbomb.com/mac/3045-17/",
+                    "abbreviation": "MAC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-139/",
+                    "id": 139,
+                    "name": "Wii U",
+                    "site_detail_url": "https://www.giantbomb.com/wii-u/3045-139/",
+                    "abbreviation": "WiiU"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-152/",
+                    "id": 152,
+                    "name": "Linux",
+                    "site_detail_url": "https://www.giantbomb.com/linux/3045-152/",
+                    "abbreviation": "LIN"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 52263,
+            "name": "Psychonauts 2",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-17/",
+                    "id": 17,
+                    "name": "Mac",
+                    "site_detail_url": "https://www.giantbomb.com/mac/3045-17/",
+                    "abbreviation": "MAC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-152/",
+                    "id": 152,
+                    "name": "Linux",
+                    "site_detail_url": "https://www.giantbomb.com/linux/3045-152/",
+                    "abbreviation": "LIN"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 52536,
+            "name": "Borderlands 3",
+            "original_release_date": "2019-09-13",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 52647,
+            "name": "Destiny 2",
+            "original_release_date": "2017-09-06",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-175/",
+                    "id": 175,
+                    "name": "Google Stadia",
+                    "site_detail_url": "https://www.giantbomb.com/google-stadia/3045-175/",
+                    "abbreviation": "STAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "DBD",
+            "id": 52693,
+            "name": "Dead by Daylight",
+            "original_release_date": "2016-06-14",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-96/",
+                    "id": 96,
+                    "name": "iPhone",
+                    "site_detail_url": "https://www.giantbomb.com/iphone/3045-96/",
+                    "abbreviation": "IPHN"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-121/",
+                    "id": 121,
+                    "name": "iPad",
+                    "site_detail_url": "https://www.giantbomb.com/ipad/3045-121/",
+                    "abbreviation": "IPAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-123/",
+                    "id": 123,
+                    "name": "Android",
+                    "site_detail_url": "https://www.giantbomb.com/android/3045-123/",
+                    "abbreviation": "ANDR"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-175/",
+                    "id": 175,
+                    "name": "Google Stadia",
+                    "site_detail_url": "https://www.giantbomb.com/google-stadia/3045-175/",
+                    "abbreviation": "STAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 53020,
+            "name": "Oddworld: Soulstorm",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 53662,
+            "name": "Everything",
+            "original_release_date": "2017-03-21",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-17/",
+                    "id": 17,
+                    "name": "Mac",
+                    "site_detail_url": "https://www.giantbomb.com/mac/3045-17/",
+                    "abbreviation": "MAC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 54218,
+            "name": "Observer",
+            "original_release_date": "2017-08-15",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-17/",
+                    "id": 17,
+                    "name": "Mac",
+                    "site_detail_url": "https://www.giantbomb.com/mac/3045-17/",
+                    "abbreviation": "MAC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-152/",
+                    "id": 152,
+                    "name": "Linux",
+                    "site_detail_url": "https://www.giantbomb.com/linux/3045-152/",
+                    "abbreviation": "LIN"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 54229,
+            "name": "God of War",
+            "original_release_date": "2018-04-20",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 54233,
+            "name": "Marvel's Spider-Man",
+            "original_release_date": "2018-09-07",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 56805,
+            "name": "Scorn",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 56806,
+            "name": "Visage",
+            "original_release_date": "2018-10-02",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "The Avengers Project",
+            "id": 57912,
+            "name": "Marvel's Avengers",
+            "original_release_date": "2020-09-04",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-175/",
+                    "id": 175,
+                    "name": "Google Stadia",
+                    "site_detail_url": "https://www.giantbomb.com/google-stadia/3045-175/",
+                    "abbreviation": "STAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 58950,
+            "name": "Hellpoint",
+            "original_release_date": "2020-07-30",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-17/",
+                    "id": 17,
+                    "name": "Mac",
+                    "site_detail_url": "https://www.giantbomb.com/mac/3045-17/",
+                    "abbreviation": "MAC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-152/",
+                    "id": 152,
+                    "name": "Linux",
+                    "site_detail_url": "https://www.giantbomb.com/linux/3045-152/",
+                    "abbreviation": "LIN"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 59902,
+            "name": "Ori and the Will of the Wisps",
+            "original_release_date": "2020-03-11",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 61571,
+            "name": "Paradise Lost",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 68449,
+            "name": "Atomic Heart",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 68781,
+            "name": "Warhammer: Chaosbane",
+            "original_release_date": "2019-06-04",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "Tetris Effect Connected",
+            "id": 68836,
+            "name": "Tetris Effect",
+            "original_release_date": "2018-11-09",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-177/",
+                    "id": 177,
+                    "name": "Oculus Quest",
+                    "site_detail_url": "https://www.giantbomb.com/oculus-quest/3045-177/",
+                    "abbreviation": "OQST"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "Halo 6",
+            "id": 68906,
+            "name": "Halo Infinite",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "DMC5",
+            "id": 68910,
+            "name": "Devil May Cry 5",
+            "original_release_date": "2019-03-08",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 68912,
+            "name": "Dying Light 2",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 68915,
+            "name": "Gears Tactics",
+            "original_release_date": "2020-04-28",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "Gears of War 5",
+            "id": 68916,
+            "name": "Gears 5",
+            "original_release_date": "2019-09-10",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 68917,
+            "name": "Doom Eternal",
+            "original_release_date": "2020-03-20",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-175/",
+                    "id": 175,
+                    "name": "Google Stadia",
+                    "site_detail_url": "https://www.giantbomb.com/google-stadia/3045-175/",
+                    "abbreviation": "STAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 68921,
+            "name": "Starfield",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "P7",
+            "id": 68937,
+            "name": "Control",
+            "original_release_date": "2019-08-27",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-199/",
+                    "id": 199,
+                    "name": "Amazon Luna",
+                    "site_detail_url": "https://www.giantbomb.com/amazon-luna/3045-199/",
+                    "abbreviation": "LUNA"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 68940,
+            "name": "Nioh 2",
+            "original_release_date": "2020-03-13",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 68953,
+            "name": "Maneater",
+            "original_release_date": "2020-05-22",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "Samurai Spirits",
+            "id": 70195,
+            "name": "Samurai Shodown",
+            "original_release_date": "2019-06-25",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-84/",
+                    "id": 84,
+                    "name": "Arcade",
+                    "site_detail_url": "https://www.giantbomb.com/arcade/3045-84/",
+                    "abbreviation": "ARC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-175/",
+                    "id": 175,
+                    "name": "Google Stadia",
+                    "site_detail_url": "https://www.giantbomb.com/google-stadia/3045-175/",
+                    "abbreviation": "STAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 71032,
+            "name": "Temtem",
+            "original_release_date": "2020-01-21",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 71303,
+            "name": "The Pathless",
+            "original_release_date": "2020-11-12",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-96/",
+                    "id": 96,
+                    "name": "iPhone",
+                    "site_detail_url": "https://www.giantbomb.com/iphone/3045-96/",
+                    "abbreviation": "IPHN"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": "MK11",
+            "id": 71305,
+            "name": "Mortal Kombat 11",
+            "original_release_date": "2019-04-23",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-175/",
+                    "id": 175,
+                    "name": "Google Stadia",
+                    "site_detail_url": "https://www.giantbomb.com/google-stadia/3045-175/",
+                    "abbreviation": "STAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 71326,
+            "name": "Werewolf: The Apocalypse – Earthblood",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 72091,
+            "name": "Chernobylite",
+            "original_release_date": "2019-10-16",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "VTMB2\nVTM Bloodlines 2",
+            "id": 72597,
+            "name": "Vampire: The Masquerade - Bloodlines 2",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 72650,
+            "name": "The Lord of the Rings: Gollum",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "Yakuza 7\nShin Ryū ga Gotoku\nRyū ga Gotoku 7",
+            "id": 72901,
+            "name": "Yakuza: Like a Dragon",
+            "original_release_date": "2020-01-16",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 72917,
+            "name": "Tribes of Midgard",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": "Call of Duty 2020\nCall of Duty: Black Ops 5\nBlack Ops V\nBlack Ops IIIII",
+            "id": 73518,
+            "name": "Call of Duty: Black Ops - Cold War",
+            "original_release_date": "2020-11-13",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 73709,
+            "name": "Watch Dogs: Legion",
+            "original_release_date": "2020-10-29",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-175/",
+                    "id": 175,
+                    "name": "Google Stadia",
+                    "site_detail_url": "https://www.giantbomb.com/google-stadia/3045-175/",
+                    "abbreviation": "STAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 73726,
+            "name": "Outriders",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-175/",
+                    "id": 175,
+                    "name": "Google Stadia",
+                    "site_detail_url": "https://www.giantbomb.com/google-stadia/3045-175/",
+                    "abbreviation": "STAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 73766,
+            "name": "LEGO Star Wars: The Skywalker Saga",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 73769,
+            "name": "CrossfireX",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 73770,
+            "name": "GhostWire: Tokyo",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 73771,
+            "name": "Deathloop",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 73783,
+            "name": "Chivalry II",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 73787,
+            "name": "Cris Tales",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-175/",
+                    "id": 175,
+                    "name": "Google Stadia",
+                    "site_detail_url": "https://www.giantbomb.com/google-stadia/3045-175/",
+                    "abbreviation": "STAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "Gods & Monsters",
+            "id": 73789,
+            "name": "Immortals: Fenyx Rising",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-175/",
+                    "id": 175,
+                    "name": "Google Stadia",
+                    "site_detail_url": "https://www.giantbomb.com/google-stadia/3045-175/",
+                    "abbreviation": "STAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-199/",
+                    "id": 199,
+                    "name": "Amazon Luna",
+                    "site_detail_url": "https://www.giantbomb.com/amazon-luna/3045-199/",
+                    "abbreviation": "LUNA"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 73850,
+            "name": "Recompile",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 74573,
+            "name": "Guilty Gear Strive",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 74711,
+            "name": "Darq",
+            "original_release_date": "2019-08-15",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 74787,
+            "name": "Little Nightmares II",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 74833,
+            "name": "Cthulhu Saves Christmas",
+            "original_release_date": "2019-12-23",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 75172,
+            "name": "R-Type Final 2",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "Battlefield 6\nBF6",
+            "id": 75845,
+            "name": "Battlefield 6 (working title)",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 75914,
+            "name": "Vampire: The Masquerade - Swansong",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 76241,
+            "name": "Gladiator X",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 76342,
+            "name": "Senua's Saga: Hellblade II",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 76343,
+            "name": "Godfall",
+            "original_release_date": "2020-11-12",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 76347,
+            "name": "Ruined King: A League of Legends Story",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 76832,
+            "name": "Project: Mara",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 76927,
+            "name": "Hardknock Nights Live",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 76961,
+            "name": "The Falconeer",
+            "original_release_date": "2020-11-10",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 77234,
+            "name": "Coreupt",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 77401,
+            "name": "Maquette",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 77604,
+            "name": "NTH^0 Infinity Reborn ",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 77640,
+            "name": "Heavenly Bodies",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-17/",
+                    "id": 17,
+                    "name": "Mac",
+                    "site_detail_url": "https://www.giantbomb.com/mac/3045-17/",
+                    "abbreviation": "MAC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 77667,
+            "name": "WRC 9 FIA World Rally Championship",
+            "original_release_date": "2020-09-03",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-157/",
+                    "id": 157,
+                    "name": "Nintendo Switch",
+                    "site_detail_url": "https://www.giantbomb.com/nintendo-switch/3045-157/",
+                    "abbreviation": "NSW"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 77695,
+            "name": "Bright Memory: Infinite",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 77747,
+            "name": "Quantum Error",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                }
+            ]
+        },
+        {
+            "aliases": "ACV",
+            "id": 78229,
+            "name": "Assassin's Creed Valhalla",
+            "original_release_date": "2020-11-10",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-175/",
+                    "id": 175,
+                    "name": "Google Stadia",
+                    "site_detail_url": "https://www.giantbomb.com/google-stadia/3045-175/",
+                    "abbreviation": "STAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 78340,
+            "name": "Dirt 5",
+            "original_release_date": "2020-10-16",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-175/",
+                    "id": 175,
+                    "name": "Google Stadia",
+                    "site_detail_url": "https://www.giantbomb.com/google-stadia/3045-175/",
+                    "abbreviation": "STAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": "Chorvs",
+            "id": 78342,
+            "name": "Chorus",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-175/",
+                    "id": 175,
+                    "name": "Google Stadia",
+                    "site_detail_url": "https://www.giantbomb.com/google-stadia/3045-175/",
+                    "abbreviation": "STAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 78343,
+            "name": "Madden NFL 21",
+            "original_release_date": "2020-08-28",
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-175/",
+                    "id": 175,
+                    "name": "Google Stadia",
+                    "site_detail_url": "https://www.giantbomb.com/google-stadia/3045-175/",
+                    "abbreviation": "STAD"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 78344,
+            "name": "Call of the Sea",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 78345,
+            "name": "The Ascent",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 78346,
+            "name": "The Medium",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 78347,
+            "name": "Scarlet Nexus",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-146/",
+                    "id": 146,
+                    "name": "PlayStation 4",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-4/3045-146/",
+                    "abbreviation": "PS4"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 78348,
+            "name": "Second Extinction",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-145/",
+                    "id": 145,
+                    "name": "Xbox One",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-one/3045-145/",
+                    "abbreviation": "XONE"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        },
+        {
+            "aliases": null,
+            "id": 78455,
+            "name": "Flea Madness",
+            "original_release_date": null,
+            "platforms": [
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-94/",
+                    "id": 94,
+                    "name": "PC",
+                    "site_detail_url": "https://www.giantbomb.com/pc/3045-94/",
+                    "abbreviation": "PC"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-176/",
+                    "id": 176,
+                    "name": "PlayStation 5",
+                    "site_detail_url": "https://www.giantbomb.com/playstation-5/3045-176/",
+                    "abbreviation": "PS5"
+                },
+                {
+                    "api_detail_url": "https://www.giantbomb.com/api/platform/3045-179/",
+                    "id": 179,
+                    "name": "Xbox Series X|S",
+                    "site_detail_url": "https://www.giantbomb.com/xbox-series-xs/3045-179/",
+                    "abbreviation": "XSX"
+                }
+            ]
+        }
+    ],
+    "version": "1.0"
+}

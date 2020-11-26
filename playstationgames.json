@@ -1,0 +1,237 @@
+[
+    {
+        "id": 138949,
+        "first_release_date": 1605139200,
+        "genres": [
+            25,
+            31
+        ],
+        "name": "Marvel's Spider-Man Remastered",
+        "platforms": [
+            167
+        ],
+        "slug": "marvels-spider-man-remastered",
+        "themes": [
+            1,
+            23,
+            31,
+            38
+        ]
+    },
+    {
+        "id": 138947,
+        "first_release_date": 1605139200,
+        "genres": [
+            31
+        ],
+        "name": "Marvel's Spider-Man: Miles Morales - Ultimate Edition",
+        "platforms": [
+            167
+        ],
+        "slug": "marvels-spider-man-miles-morales-ultimate-edition",
+        "themes": [
+            1,
+            38
+        ]
+    },
+    {
+        "id": 134606,
+        "first_release_date": 1605139200,
+        "genres": [
+            12,
+            31
+        ],
+        "name": "Demon's Souls",
+        "platforms": [
+            167
+        ],
+        "slug": "demons-souls",
+        "themes": [
+            1,
+            17,
+            19
+        ]
+    },
+    {
+        "id": 134597,
+        "first_release_date": 1605139200,
+        "genres": [
+            8
+        ],
+        "name": "Astro’s Playroom",
+        "platforms": [
+            167
+        ],
+        "slug": "astros-playroom"
+    }
+
+	  {
+		"id": 134101,
+		"first_release_date": 1602201600,
+		"genres": [
+		  14
+		],
+		"name": "FIFA 21",
+		"platforms": [
+		  6,
+		  48,
+		  49,
+		  167,
+		  169,
+		  170
+		],
+		"slug": "fifa-21"
+	  },
+	  {
+		"id": 135915,
+		"first_release_date": 1605139200,
+		"genres": [
+		  13,
+		  32
+		],
+		"name": "Overcooked! All You Can Eat",
+		"platforms": [
+		  167,
+		  169
+		],
+		"slug": "overcooked-all-you-can-eat"
+	  },
+	  {
+		"id": 140897,
+		"first_release_date": 1604880000,
+		"genres": [
+		  5
+		],
+		"name": "Borderlands 3: Next-Level Edition",
+		"platforms": [
+		  48,
+		  49,
+		  167,
+		  169
+		],
+		"slug": "borderlands-3-next-level-edition",
+		"themes": [
+		  1,
+		  17,
+		  27,
+		  38
+		]
+	  },
+	  {
+		"id": 134602,
+		"first_release_date": 1605139200,
+		"genres": [
+		  31
+		],
+		"name": "Bugsnax",
+		"platforms": [
+		  6,
+		  14,
+		  48,
+		  167
+		],
+		"slug": "bugsnax",
+		"themes": [
+		  27
+		]
+	  },
+	  {
+		"id": 136492,
+		"first_release_date": 1604966400,
+		"genres": [
+		  12,
+		  25
+		],
+		"name": "Yakuza: Like a Dragon - Hero Edition",
+		"platforms": [
+		  6,
+		  48,
+		  49,
+		  167,
+		  169
+		],
+		"slug": "yakuza-like-a-dragon-hero-edition",
+		"themes": [
+		  1
+		]
+	  },
+	  {
+		"id": 127343,
+		"first_release_date": 1605139200,
+		"genres": [
+		  12
+		],
+		"name": "Godfall",
+		"platforms": [
+		  6,
+		  167
+		],
+		"slug": "godfall",
+		"themes": [
+		  1,
+		  17
+		]
+	  },
+	  {
+		"id": 133773,
+		"first_release_date": 1599091200,
+		"genres": [
+		  10,
+		  13,
+		  14
+		],
+		"name": "WRC 9",
+		"platforms": [
+		  6,
+		  48,
+		  49,
+		  130,
+		  167,
+		  169
+		],
+		"slug": "wrc-9"
+	  },
+	  {
+		"id": 7360,
+		"first_release_date": 1448928000,
+		"genres": [
+		  5,
+		  24
+		],
+		"name": "Tom Clancy\u0027s Rainbow Six Siege",
+		"platforms": [
+		  6,
+		  48,
+		  49,
+		  167,
+		  169
+		],
+		"slug": "tom-clancys-rainbow-six-siege",
+		"themes": [
+		  1,
+		  39
+		]
+	  },
+	  {
+		"id": 113118,
+		"first_release_date": 1605139200,
+		"genres": [
+		  31
+		],
+		"name": "The Pathless",
+		"platforms": [
+		  6,
+		  14,
+		  39,
+		  48,
+		  167
+		],
+		"slug": "the-pathless",
+		"themes": [
+		  1,
+		  17,
+		  38,
+		  43
+		]
+	  }
+]
