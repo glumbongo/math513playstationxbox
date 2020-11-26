@@ -1,4 +1,4 @@
-
+#This counts the amout of tweets the offical playstation and xbox twitter ccounts have made and makes a graph comparing them
 X_P <- get_timeline(
   c("Xbox","PlayStation"),
   n = 18000)
