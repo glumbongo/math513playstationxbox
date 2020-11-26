@@ -5,13 +5,7 @@ library(readr)
 
 setwd("C://users/glumb/documents/university/math513/coursework")
 
-token <- create_token(app = "math513study",
-                      consumer_key = "wmG4paDWEtwIqH2NDfzIsekBM",
-                      consumer_secret = "pyFyfg4WBTbzMRBH5qSdriM3l51CkFYEoc9UOZzAQyEP531sz8",
-                      access_token = "1316056167353909255-LHy2H7emnj0C8JQVH65bauWHWyD6Mf",
-                      access_secret = "MfDRf2CbAK4cu5fRunDR8UGdw1VJTJrvYoQkGGa6K2in0")
 
-token
 
 
 playstation <- search_tweets("#playstation5",
