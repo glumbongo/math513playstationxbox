@@ -1,7 +1,8 @@
 
 library(tidyverse)
+library(ggallin)
 
-setwd("~/Library/Mobile Documents/com~apple~CloudDocs/MATH513/math513playstationxbox-main 2")
+# setwd("~/Library/Mobile Documents/com~apple~CloudDocs/MATH513/math513playstationxbox-main 2")
 
 playstation_english <-  read_csv("playstation_tweets_english.csv", col_names = TRUE)
 xbox_x_english <-  read_csv("xboxseriesx_tweets_english.csv", col_names = TRUE)
@@ -18,7 +19,7 @@ topic_prep <- function(dataframe, regex){
   intermediate2 <- intermediate1 %>% filter(grepl(regex, stripped_text, ignore.case = TRUE)) %>% mutate(topic = regex)
 }
 
-#search each kayword
+#search each keyword
 price_ps <- topic_prep(playstation_english, "price")
 hardware_ps <- topic_prep(playstation_english,"hardware")  
 design_ps <- topic_prep(playstation_english,"design")  
@@ -42,17 +43,30 @@ all <- rbind(all_ps_1, within(all_xb_1, n <- -n))
 all$origin <- rep(c("all_ps_1", "all_xb_1"), each = nrow(all_ps_1))
 
 
+#psuedo log10
 ggplot(all, aes(n, topic, fill = origin)) +
   geom_col() +
-  scale_x_continuous(labels = abs) +
+  scale_x_continuous(trans = pseudolog10_trans, labels = abs, breaks = waiver()) + 
   labs(x = NULL, y = NULL,
        title = "Frequency of discussed topics regards to each console",
        subtitle = "Twitter status (tweet) counts aggregated containing keywords",
        caption = "Source: Data collected from Twitter's REST API via rtweet") +
-  scale_fill_manual(name = "Console", values = c("#6699FF", "#FF6699")
-                    , labels = c("all_ps_1" = "Playstation 5", "all_xb_1" = "Xbox series X"))
+  scale_fill_manual(name = "Console", values = c("#6699FF", "#FF6699"), 
+                    labels = c("all_ps_1" = "Playstation 5", "all_xb_1" = "Xbox series X")) 
+  
+
+#continous scaling
+ggplot(all, aes(n, topic, fill = origin)) +
+  geom_col() +
+  scale_x_continuous(labels = abs) +
+  labs(x = NULL, y = NULL,
+               title = "Frequency of discussed topics regards to each console",
+              subtitle = "Twitter status (tweet) counts aggregated containing keywords",
+               caption = "Source: Data collected from Twitter's REST API via rtweet") +
+ scale_fill_manual(name = "Console", values = c("#6699FF", "#FF6699"), 
+                   labels = c("all_ps_1" = "Playstation 5", "all_xb_1" = "Xbox series X"))
 
 
-
+#topics as a proportion of tweets 
 
 
