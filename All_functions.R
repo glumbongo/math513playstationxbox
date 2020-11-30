@@ -88,6 +88,32 @@ platform_f <- factor(platform_sentiment$platform)
 platform_sentiment <- platform_sentiment %>% mutate(platform = platform_f)
 
 
+#average sentiment aggregated every 6 hours
+
+sentiment_6_hour <- platform_sentiment %>% mutate(six_hour_intervals = cut.POSIXt(created_at, breaks = "6 hours")) %>% 
+  group_by(platform, six_hour_intervals) %>% summarise(avg_sentiment = mean(score))
+
+sentiment_6_hour  %>% group_by(platform) %>% ggplot(aes(x = six_hour_intervals, y = avg_sentiment, color = platform,
+                                                        group = platform)) +
+  geom_point() +
+  geom_line() +
+  theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2))
+
+
+#average sentiment by hour of the day
+
+sentiment_by_hour <- platform_sentiment %>% group_by(platform, hour_of_day) %>% 
+  summarise(mean_sentiment = mean(score) )
+
+sentiment_by_hour %>% group_by(platform) %>% ggplot(aes(x = hour_of_day, y = mean_sentiment, color = platform)) +
+  geom_point() +
+  geom_line() +
+  scale_x_continuous(breaks = seq(0:23))
+
+
+
+
+
 
 # write_csv(platform_sentiment, file = "platform_sentiment_by_tweet.csv")
 
@@ -347,8 +373,8 @@ totals %>% ggplot(aes(x = created_at, y = total_posts, color = screen_name)) +
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++##
 ##__________________________________________________Top ten most mentioned games(mg)_______________________________________________________##
 ##____________________________________________________________Fix Graph____________________________________________________________________##
-mg_playstation_english <- playstation_english %>% select(text) %>% mutate(platform = "Playstation")
-mg_xbox_x_english <- xbox_x_english %>% select(text) %>% mutate(platform = "Xbox")
+mg_playstation_english <- playstation_english %>% select(text, created_at) %>% mutate(platform = "Playstation")
+mg_xbox_x_english <- xbox_x_english %>% select(text, created_at) %>% mutate(platform = "Xbox")
 
 mg_playstation_xbox_text <- rbind(mg_playstation_english, mg_xbox_x_english)
 
@@ -407,7 +433,7 @@ discussed_games_prep <- function(dataframe, regex, game_name, output_frame){
   dataframe$stripped_text <- gsub("https.*","", dataframe$stripped_text)
   dataframe$stripped_text <- gsub("amp","", dataframe$stripped_text)
   
-  intermediate1 <- dataframe %>% select(stripped_text, platform) %>% mutate(tweet_number = row_number()) #add tweet numbers to keep track
+  intermediate1 <- dataframe %>% select(stripped_text, platform, created_at) %>% mutate(tweet_number = row_number()) #add tweet numbers to keep track
   
   #isolate the tweets containing the keyword from the dataframe, unnest the text into singular words and filter the stop words. 
   intermediate2 <- intermediate1 %>% filter(grepl(regex, stripped_text, ignore.case = TRUE)) %>% mutate(game = game_name)
@@ -426,10 +452,19 @@ launch_games_tweets <- launch_games_tweets %>% group_by(game) %>%
 
 #dataframe now ready to use for further analysis 
 
+
+#most discussed games within the entire dataset, ordered from ost to least
 launch_games_tweets %>% 
   ggplot(aes(x = reorder(game, -tweet_count))) +
   geom_bar(stat="count") +
   theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2))
+
+
+# volume of tweets over time for the top 10 games
+
+
+
+
 
 
 
