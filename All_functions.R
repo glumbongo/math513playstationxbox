@@ -11,6 +11,7 @@ library(wordcloud2)
 library(tidyr)
 library(maps)
 library(graphics)
+library(lubridate)
 
 setwd("C://Users//ELISW//Documents//UNI//Data")
 
@@ -85,7 +86,7 @@ playstation_sentiment <- console_sentiment_analysis_prep(playstation_english, "P
 #bind dataframes, factorise platform
 platform_sentiment <- rbind(xbox_sentiment, playstation_sentiment)
 platform_f <- factor(platform_sentiment$platform)
-platform_sentiment <- platform_sentiment %>% mutate(platform = platform_f)
+platform_sentiment <- platform_sentiment %>% mutate(platform = platform_f, hour_of_day = hour(created_at))
 
 
 #average sentiment aggregated every 6 hours
