@@ -12,6 +12,7 @@ library(tidyr)
 library(maps)
 library(graphics)
 library(lubridate)
+library(ggallin)
 
 setwd("C://Users//ELISW//Documents//UNI//Data")
 
@@ -458,10 +459,114 @@ launch_games_tweets <- launch_games_tweets %>% group_by(game) %>%
 launch_games_tweets %>% 
   ggplot(aes(x = reorder(game, -tweet_count))) +
   geom_bar(stat="count") +
-  theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2))
+  theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2)) +
+  labs(x = "Game", y = "Number of Tweets",
+       title = "Number of times a certain game was mentioned in a tweet",
+       subtitle = "Twitter status (tweet) counts aggregated containing keywords",
+       caption = "Source: Data collected from Twitter's REST API via rtweet")
 
 
 # volume of tweets over time for the top 10 games
+
+
+
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+###### Top 10 Games Keyword Contrast###
+launch_games_tweets <- do.call(rbind, games_by_volume_list)
+
+#change date formula as a variable
+date <- as.Date(as.POSIXct(launch_games_tweets$created_at, format = '%Y%M%D'))
+
+#ass the variable into the previous data frame
+add_date <- cbind(launch_games_tweets,date)
+
+#group_by games by date
+group <- add_date %>% group_by(game,date) %>% count()
+
+#only group_by games
+group2 <- add_date %>% group_by(game) %>% count()
+
+#get top 10 games with the most tweests
+get_top_10 <- group2 %>% arrange(desc(n)) %>% head(10)
+get_top_10
+
+#filter the df with the date by the list of top 10 games
+get_top_102 <- filter(group,game %in% get_top_10$game)
+
+ggplot(get_top_102, aes(x = date, y = n, color = game)) +
+  geom_line()+
+  labs(x = NULL, y = NULL, 
+       title = "Frequency of Tweets of Games",
+       subtitle = "Twitter status (tweet) counts aggregated using 1-days intervals",
+       caption = "Source: Data collected from Twitter's REST API via rtweet")
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+####### Frequency of topics reagrds to console###
+
+topic_prep <- function(dataframe, regex){
+  
+  dataframe$stripped_text <- gsub("http.*","", dataframe$text) #strip the text of links etc etc
+  dataframe$stripped_text <- gsub("https.*","", dataframe$stripped_text)
+  dataframe$stripped_text <- gsub("amp","", dataframe$stripped_text)
+  
+  intermediate1 <- dataframe %>% select(stripped_text,created_at) %>% mutate(tweet_number = row_number()) #add tweet numbers to keep track
+  
+  #isolate the tweets containing the keyword from the dataframe, unnest the text into singular words and filter the stop words. 
+  intermediate2 <- intermediate1 %>% filter(grepl(regex, stripped_text, ignore.case = TRUE)) %>% mutate(topic = regex)
+}
+
+#search each keyword
+price_ps <- topic_prep(playstation_english, "price")
+hardware_ps <- topic_prep(playstation_english,"hardware")  
+design_ps <- topic_prep(playstation_english,"design")  
+game_ps <- topic_prep(playstation_english,"game")
+
+price_xb <- topic_prep(xbox_x_english, "price")
+hardware_xb <- topic_prep(xbox_x_english,"hardware")  
+design_xb <- topic_prep(xbox_x_english,"design") 
+game_xb <- topic_prep(xbox_x_english,"game")
+
+#combine data frames by console
+all_ps <- rbind(price_ps, hardware_ps, design_ps, game_ps)
+all_xb <- rbind(price_xb, hardware_xb, design_xb, game_xb)
+
+#count by topics
+all_ps_1 <- all_ps %>% group_by(topic) %>% count()
+all_xb_1 <- all_xb %>% group_by(topic) %>% count()
+
+#make the bar into negative section 
+all <- rbind(all_ps_1, within(all_xb_1, n <- -n))
+all$origin <- rep(c("all_ps_1", "all_xb_1"), each = nrow(all_ps_1))
+
+
+#psuedo log10
+ggplot(all, aes(n, topic, fill = origin)) +
+  geom_col() +
+  scale_x_continuous(trans = pseudolog10_trans, labels = abs, breaks = waiver()) + 
+  labs(x = NULL, y = NULL,
+       title = "Frequency of discussed topics regards to each console",
+       subtitle = "Twitter status (tweet) counts aggregated containing keywords",
+       caption = "Source: Data collected from Twitter's REST API via rtweet") +
+  scale_fill_manual(name = "Console", values = c("#6699FF", "#FF6699"), 
+                    labels = c("all_ps_1" = "Playstation 5", "all_xb_1" = "Xbox series X")) 
+
+
+#continous scaling
+ggplot(all, aes(n, topic, fill = origin)) +
+  geom_col() +
+  scale_x_continuous(labels = abs) +
+  labs(x = NULL, y = NULL,
+       title = "Frequency of discussed topics regards to each console",
+       subtitle = "Twitter status (tweet) counts aggregated containing keywords",
+       caption = "Source: Data collected from Twitter's REST API via rtweet") +
+  scale_fill_manual(name = "Console", values = c("#6699FF", "#FF6699"), 
+                    labels = c("all_ps_1" = "Playstation 5", "all_xb_1" = "Xbox series X"))
+#topics as a proportion of tweets 
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+
+
+
+
+
 
 
 
