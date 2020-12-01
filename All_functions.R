@@ -114,6 +114,56 @@ sentiment_by_hour %>% group_by(platform) %>% ggplot(aes(x = hour_of_day, y = mea
 
 
 
+#sentiment using NRC library (emotions)
+
+console_sentiment_analysis_prep_nrc <- function(dataframe, inputtopic){
+  
+  dataframe$stripped_text <- gsub("http.*","", dataframe$text)
+  dataframe$stripped_text <- gsub("https.*","", dataframe$stripped_text)
+  dataframe$stripped_text <- gsub("amp","", dataframe$stripped_text)
+  
+  intermediate1 <- dataframe %>% select(stripped_text, created_at) %>% mutate(tweet_number = row_number()) %>%
+    unnest_tokens(word, stripped_text)
+  
+  intermediate2 <- intermediate1 %>% anti_join(stop_words) %>% anti_join(console_my_stop_words)
+  
+  dataframe_sentiment <- intermediate2 %>%
+    inner_join(get_sentiments("nrc"))
+  
+  output <- dataframe_sentiment %>% mutate(platform = inputtopic)
+  
+  
+}
+
+nrc_test_xbox <- console_sentiment_analysis_prep_nrc(xbox_x_english, "Xbox_X")
+nrc_test_playstation <- console_sentiment_analysis_prep_nrc(playstation_english, "Playstation")
+nrc_sentiment <- rbind(nrc_test_xbox, nrc_test_playstation)
+platform_f <- factor(nrc_sentiment$platform)
+nrc_sentiment <- nrc_sentiment %>% mutate(platform = platform_f)
+
+#nrc sentiment grouped in 6 hour intervals 
+nrc_sentiment_6_hour <- nrc_sentiment %>% mutate(six_hour_intervals = cut.POSIXt(created_at, breaks = "6 hours")) %>%
+  count(platform, sentiment, six_hour_intervals)
+
+#too many data points tightly packed
+nrc_sentiment_6_hour %>% group_by(sentiment) %>% ggplot(aes(x = six_hour_intervals, y = n, color = sentiment, group = sentiment)) +
+  geom_point() +
+  
+  scale_y_log10() +
+  theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2)) +
+  facet_wrap(~ platform)
+
+#1 day intervals 
+
+nrc_sentiment_1_day <- nrc_sentiment %>% mutate(one_day_intervals = cut.POSIXt(created_at, breaks = "1 day")) %>%
+  count(platform, sentiment, one_day_intervals)
+
+nrc_sentiment_1_day %>% group_by(sentiment) %>% ggplot(aes(x = one_day_intervals, y = n, color = sentiment, group = sentiment)) +
+  geom_point() +
+  geom_line() +
+  scale_y_log10() +
+  theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2)) +
+  facet_wrap(platform ~sentiment)
 
 
 
@@ -464,6 +514,81 @@ launch_games_tweets %>%
        title = "Number of times a certain game was mentioned in a tweet",
        subtitle = "Twitter status (tweet) counts aggregated containing keywords",
        caption = "Source: Data collected from Twitter's REST API via rtweet")
+
+
+
+
+#---------------------------TOP 10 GAME SENTIMENT--------------------------------#
+
+#establish the top 10 discussed games by n- of tweets
+top10_filter <- launch_games_tweets %>% count(game) %>% arrange(desc(n)) %>% head(10)
+
+#filter tweet list to just have the top 10 games 
+top10_tweets <- launch_games_tweets %>% filter(game %in% top10_filter$game)
+console_my_stop_words <- data.frame(word = c("playstation","ps5","PS5","xbox","gaming","games","game"))
+
+#unnest text to analyse 
+top10games_unnested <- top10_tweets %>% select(stripped_text, tweet_number, created_at) %>% unnest_tokens(word, stripped_text)
+
+#introduce stop words 
+top10games_sentiment <- top10games_unnested %>% anti_join(stop_words, by = c("word" = "word"))
+top10games_sentiment_2 <- top10games_sentiment %>%  anti_join(console_my_stop_words, by = c("word" = "word"))
+
+#using binary sentiment library
+game_sentiment <- top10games_sentiment_2 %>%
+  inner_join(get_sentiments("bing")) %>%
+  mutate(sentiment = ifelse(word == "hype", "positive", sentiment))
+
+#overall score per tweet with time included for more detailed analysis 
+game_sentiment_score <- game_sentiment %>% count(tweet_number, created_at, sentiment) %>%
+  spread(sentiment, n, fill = 0) %>% mutate(score = positive - negative)
+
+
+#mean sentiment for each game
+mean_sentiment_game <- game_sentiment_score %>% group_by(game) %>% summarise(avg_sentiment = mean(score))
+#cyberpunk held down by delay news that came out october 27th
+
+#multi variable t-test for the sentiments of each game 
+
+
+#sentiment of games every 6 hours
+game_sentiment_6_hour <- game_sentiment_score %>% mutate(six_hour_intervals = cut.POSIXt(created_at, breaks = "6 hours")) %>% 
+  group_by(game, six_hour_intervals) %>% summarise(avg_sentiment = mean(score))
+
+game_sentiment_6_hour  %>% group_by(game) %>% ggplot(aes(x = six_hour_intervals, y = avg_sentiment, color = game,
+                                                         group = game)) +
+  geom_point() +
+  geom_line() +
+  theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2))
+
+#sentiment of games every day
+game_sentiment_one_day <- game_sentiment_score %>% mutate(one_day_intervals = cut.POSIXt(created_at, breaks = "1 day")) %>% 
+  group_by(game, one_day_intervals) %>% summarise(avg_sentiment = mean(score))
+
+game_sentiment_one_day  %>% group_by(game) %>% ggplot(aes(x = one_day_intervals, y = avg_sentiment, color = game,
+                                                          group = game)) +
+  geom_point() +
+  geom_line() +
+  theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # volume of tweets over time for the top 10 games
