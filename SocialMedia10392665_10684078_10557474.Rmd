@@ -1,0 +1,107 @@
+---
+title: "An analysis on the next genetation on home consoles "
+author: "10392665, 10684078, 10557474"
+output: beamer_presentation
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(rtweet)
+library(ggplot2)
+library(dplyr)
+library(ggthemes)
+library(readr)
+library(jsonlite)
+library(tidytext)
+library(wordcloud)
+library(wordcloud2)
+library(tidyr)
+library(maps)
+library(graphics)
+
+setwd("C://Users//ELISW//Documents//UNI//Data")
+
+playstation_english <-  read_csv("playstation_tweets_english.csv", col_names = TRUE)
+xbox_x_english <-  read_csv("xboxseriesx_tweets_english.csv", col_names = TRUE)
+```
+
+
+
+## Introduction
+
+TITLE NAMES ARE TEMP
+
+Please place the introduction here
+
+## Another slide left for introductions 
+
+## Our Aims: 
+
+- Which console is more discussed, Xbox or PlayStation?
+- Which console do people prefer?
+- What is the most important factor when people choose which to buy? 
+- What are the strategies that each console use in the market?
+- Which kind of games are more preferable?
+- Which game is the most popular?
+
+## Sentiment analysis for xbox and PlayStation (inc. t-test)
+
+
+## Retweets contrast (graph) + disscuss sentiment correlation  
+
+## Sentiment over time
+
+## Tweet Count from offical Xbox and Playstation Twitter
+
+```{r, echo = FALSE}
+  
+ps <- as.Date(as.POSIXct(playstation_english$created_at,format='%Y%M%D'))
+xb <- as.Date(as.POSIXct(xbox_x_english$created_at,format='%Y%M%D'))
+
+playstation_english <- cbind(playstation_english,ps)
+xbox_x_english <- cbind(xbox_x_english,xb)
+
+ctx <- playstation_english %>% group_by(ps) %>% count()
+
+ctp <- xbox_x_english %>% group_by(xb) %>% count()
+
+## Cont
+ggplot() + 
+  geom_area(data = ctp,aes(x = xb, y = n, color = "#E7B800", fill = "#E7B800"), 
+            alpha = 0.5, position = position_dodge(0.8)) +
+  geom_area(data = ctx,aes(x = ps, y = n,color = "#00AFBB", fill = "#00AFBB"), 
+            alpha = 0.5, position = position_dodge(0.8)) +
+  labs(x = NULL, y = NULL,title = "Frequency of Tweets From #Xbox and #Playstation",
+       subtitle = "Twitter status (tweet) counts aggregated using 1-days intervals",
+       caption = "Source: Data collected from Twitter's REST API via rtweet")+
+  scale_color_manual(values = c("#00AFBB", "#E7B800")) +
+  scale_fill_manual(values = c("#00AFBB", "#E7B800"),
+                    name  ="Console",
+                    labels=c("Playstation", "Xbox")) +
+  guides(color=FALSE) 
+```
+
+
+## Locations of each tweet
+
+## Wordclouds
+
+## Bar chart tweets volume of price X Hardware
+
+## Barchart of most disscussed games
+
+## Sentiment for top 10 most discussed
+
+## Which platform are the most positives sentiments on
+
+## Genre barplots (find gap in the market)
+
+## Conclusion 
+
+## Limitations
+
+
+
