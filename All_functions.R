@@ -13,6 +13,7 @@ library(maps)
 library(graphics)
 library(lubridate)
 library(ggallin)
+library(patchwork)
 
 setwd("C://Users//ELISW//Documents//UNI//Data")
 
@@ -215,7 +216,7 @@ re_playstation <- playstation_english %>% mutate(location_rec =
                                                   "Calgary, Alberta" = "Canada", "Florida, USA" = "United States", "Ontario Canada" = "Canada",
                                                   "Melbourne, Victoria" = "Australia", "Chicago, IL" = "United States", "London" = "UK", "Lafayette, LA"
                                                   = "United States", "Sheffield, England" = "UK", "Scotland" = "UK", "North Pole, AK" = "United States",
-                                                  "London" = "UK", "Chicago, IL"= "United States", "Córdoba/Spain" = "Spain",
+                                                  "London" = "UK", "Chicago, IL"= "United States", "CÃ³rdoba/Spain" = "Spain",
                                                   "Florida, USA" = "United States", "London, UK" = "UK", "Sweden/Stockholm" = "Sweden",
                                                   "Caerphilly, South Wales, UK" = "UK", "Dallas, TX" = "United States", "Virginia, USA"
                                                   = "United States", "Deutschland" = "Germany", "NJ" = "United States", "Seattle, WA" = 
@@ -236,7 +237,7 @@ re_playstation <- playstation_english %>% mutate(location_rec =
 
 
 #
-re_playstation %>%
+ps_loc_graph <- re_playstation %>%
   filter(!location_rec %in% c("Worldwide", "A PLANET N OUTER SPACE <U+0001F30D><U+0001F30D>", "Born in Night City ",
                               "patreon.com/germanstrands", "Mistake Island", "Ragnarok", "Nirvana, Outer Space", "twitch.tv/xbmnetwork", "Earth", "/usr/optimus_code",
                               "Everywhere & Nowhere", "Interwebs", "XBL", "Bad Vibes Forever")) %>%
@@ -277,7 +278,7 @@ re_xboxX <- xbox_x_english %>% mutate(location_rec =
                                       "Calgary, Alberta" = "Canada", "Florida, USA" = "United States", "Ontario Canada" = "Canada",
                                       "Melbourne, Victoria" = "Australia", "Chicago, IL" = "United States", "London" = "UK", "Lafayette, LA"
                                       = "United States", "Sheffield, England" = "UK", "Scotland" = "UK", "North Pole, AK" = "United States",
-                                      "London" = "UK", "Chicago, IL"= "United States", "Córdoba/Spain" = "Spain",
+                                      "London" = "UK", "Chicago, IL"= "United States", "CÃ³rdoba/Spain" = "Spain",
                                       "Florida, USA" = "United States", "London, UK" = "UK", "Sweden/Stockholm" = "Sweden",
                                       "Caerphilly, South Wales, UK" = "UK", "Dallas, TX" = "United States", "Virginia, USA"
                                       = "United States", "Deutschland" = "Germany", "NJ" = "United States", "Seattle, WA" = 
@@ -301,7 +302,7 @@ re_xboxX <- xbox_x_english %>% mutate(location_rec =
 
 
 
-re_xboxX %>%
+xbox_loc_graph <- re_xboxX %>%
   filter(!location_rec %in% c("Worldwide", "A PLANET N OUTER SPACE <U+0001F30D><U+0001F30D>", "Born in Night City ",
                               "patreon.com/germanstrands", "Mistake Island", "Ragnarok", "Nirvana, Outer Space", "twitch.tv/xbmnetwork", "Earth", "/usr/optimus_code",
                               "Everywhere & Nowhere", "Interwebs", "XBL", "Bad Vibes Forever")) %>%
@@ -319,6 +320,9 @@ re_xboxX %>%
   theme(axis.text = element_text(size = 16, color = "black"), 
         axis.title = element_text(size = 16, color = "black"),
         title = element_text(size = 18))
+
+
+xbox_loc_graph + ps_loc_graph #Patchwork Lib lets you save graphs to variables and print them out right next too eachother
 
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++##
 #____________________________Word Cloud (wc)_____________________________#
