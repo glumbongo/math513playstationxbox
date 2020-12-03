@@ -263,10 +263,10 @@ re_playstation <- playstation_english %>% mutate(location_rec =
                                                   "Calgary, Alberta" = "Canada", "Florida, USA" = "United States", "Ontario Canada" = "Canada",
                                                   "Melbourne, Victoria" = "Australia", "Chicago, IL" = "United States", "London" = "UK", "Lafayette, LA"
                                                   = "United States", "Sheffield, England" = "UK", "Scotland" = "UK", "North Pole, AK" = "United States",
-                                                  "London" = "UK", "Chicago, IL"= "United States", "C�rdoba/Spain" = "Spain",
+                                                  "London" = "UK", "Chicago, IL"= "United States", "Córdoba/Spain" = "Spain",
                                                   "Florida, USA" = "United States", "London, UK" = "UK", "Sweden/Stockholm" = "Sweden",
                                                   "Caerphilly, South Wales, UK" = "UK", "Dallas, TX" = "United States", "Virginia, USA"
-                                                  = "United States", "Deutschland" = "Germany", "NJ" = "Unite�d States", "Seattle, WA" = 
+                                                  = "United States", "Deutschland" = "Germany", "NJ" = "Uniteód States", "Seattle, WA" = 
                                                     "United States", "Bari, Puglia" = "Italy", "New York" = "United States", "Ohio, USA"=
                                                     "United States", "England" = "UK", "Atlanta, GA" = "United States", "Washington, DC"
                                                   = "United States", "New Jersey, USA" = "United States", "Manchester, England" = "UK",
@@ -373,7 +373,7 @@ re_xboxX <- xbox_x_english %>% mutate(location_rec =
                                       "Calgary, Alberta" = "Canada", "Florida, USA" = "United States", "Ontario Canada" = "Canada",
                                       "Melbourne, Victoria" = "Australia", "Chicago, IL" = "United States", "London" = "UK", "Lafayette, LA"
                                       = "United States", "Sheffield, England" = "UK", "Scotland" = "UK", "North Pole, AK" = "United States",
-                                      "London" = "UK", "Chicago, IL"= "United States", "Córdoba/Spain" = "Spain",
+                                      "London" = "UK", "Chicago, IL"= "United States", "CÃ³rdoba/Spain" = "Spain",
                                       "Florida, USA" = "United States", "London, UK" = "UK", "Sweden/Stockholm" = "Sweden",
                                       "Caerphilly, South Wales, UK" = "UK", "Dallas, TX" = "United States", "Virginia, USA"
                                       = "United States", "Deutschland" = "Germany", "NJ" = "United States", "Seattle, WA" = 
@@ -809,7 +809,6 @@ ggplot(all, aes(n, topic, fill = origin)) +
                     labels = c("all_ps_1" = "Playstation 5", "all_xb_1" = "Xbox series X"))
 #topics as a proportion of tweets 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
-
 
 
 
