@@ -17,10 +17,15 @@ library(patchwork)
 library(scales)
 library(RColorBrewer)
 
-setwd("C://Users//glumb/Documents/university/math513/coursework/presentation/csv_files")
+setwd("C://Users//ELISW//Documents//UNI//Data")
 
 playstation_english <-  read_csv("playstation_tweets_english.csv", col_names = TRUE)
 xbox_x_english <-  read_csv("xboxseriesx_tweets_english.csv", col_names = TRUE)
+
+
+#xboxColour:#0e7a0d
+#playstationColour: #003087
+
 
 ##____________________________(tv) Tweet Volume___________________________##
 
@@ -44,10 +49,13 @@ ggplot() +
        subtitle = "Twitter status (tweet) counts aggregated using 1-days intervals",
        caption = "Source: Data collected from Twitter's REST API via rtweet")+
   scale_color_manual(values = c("#00AFBB", "#E7B800")) +
-  scale_fill_manual(values = c("#00AFBB", "#E7B800"),
+  scale_fill_manual(values = c("#003087", "#0e7a0d"),
                     name  ="Console",
                     labels=c("Playstation", "Xbox")) +
+   theme_minimal() +
   guides(color=FALSE)
+
+
 ##+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++##
 ##________________________(csa)Sentiment Analysis for consoles + t test____________##
 
@@ -100,10 +108,22 @@ sentiment_6_hour <- platform_sentiment %>% mutate(six_hour_intervals = cut.POSIX
 
 sentiment_6_hour  %>% group_by(platform) %>% ggplot(aes(x = six_hour_intervals, y = avg_sentiment, color = platform,
                                                         group = platform)) +
-  geom_point(size = 4) +
-  geom_line(size = 2) +
+  geom_line(size = 1) +
   geom_smooth(method = "lm", se = FALSE) +
-  theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2))
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2)) +
+  labs(x = "Time (in 6 hour intervals)", y = "Average Sentiment", color = "Platform",
+       title = "Average sentiment of offical box and Playstation twitter accounts", caption = "Source: Data collected from Twitter's REST API via rtweet") +
+       scale_color_manual(values = c("#00AFBB", "#E7B800")) 
+
+
+#totals %>% ggplot(aes(x = created_at, y = total_posts, color = screen_name)) +
+#  geom_line(size = 1.25) +
+#  scale_y_continuous() +  
+#  theme_minimal() +
+#  labs(x = "Date", y = "Number of Tweets", color = "Console Twitter Account",
+#       title = "Number of tweets the official Xbox and Playstation twitters posted", caption = "Source: Data collected from Twitter's REST API via rtweet") +
+#  scale_color_manual(values = c("#00AFBB", "#E7B800")) 
 
 
 #average sentiment by hour of the day
@@ -112,8 +132,11 @@ sentiment_by_hour <- platform_sentiment %>% group_by(platform, hour_of_day) %>%
   summarise(mean_sentiment = mean(score) )
 
 sentiment_by_hour %>% group_by(platform) %>% ggplot(aes(x = hour_of_day, y = mean_sentiment, color = platform)) +
-  geom_point(size = 3) +
-  geom_line(size = 2) +
+  geom_line(size = 1) +
+  theme_minimal() +
+  labs(x = "Hour of the day", y = "Average Sentiment", color = "Platform",
+       title = "Average sentiment each hour of offical box and Playstation twitter accounts ", caption = "Source: Data collected from Twitter's REST API via rtweet") +
+  scale_color_manual(values = c("#00AFBB", "#E7B800")) 
 
   scale_x_continuous(breaks = seq(0:23))
 
@@ -158,6 +181,7 @@ nrc_sentiment_1_day %>% ggplot(aes(x = sentiment, y = n, group = platform, shape
   geom_point(size = 4) +
   coord_polar() +
   scale_y_log10() +
+  theme_minimal() +
   geom_text(aes(label = n), size = 3, color = "black", vjust = -1) +
   theme(
     axis.text.y = element_blank(),
@@ -167,7 +191,6 @@ nrc_sentiment_1_day %>% ggplot(aes(x = sentiment, y = n, group = platform, shape
     axis.text.x = element_text(
       face = "bold", size = 12, color = RColorBrewer:::brewer.pal(n = 6, "YlOrBr")[2:6]
     ))
-
 
 
 
@@ -247,7 +270,6 @@ t.test(Xbox_scores$score, mu = 0)
 t.test(playstation_scores, mu = 0)
 ##++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++##
 ##_________________________________________(tl)Tweet Location_____________________________________##
-playstation_english
 playstation_english$location[playstation_english$location==""] <- NA
 #Transforms the empty values into NA's                    
 
@@ -263,7 +285,7 @@ re_playstation <- playstation_english %>% mutate(location_rec =
                                                   "Calgary, Alberta" = "Canada", "Florida, USA" = "United States", "Ontario Canada" = "Canada",
                                                   "Melbourne, Victoria" = "Australia", "Chicago, IL" = "United States", "London" = "UK", "Lafayette, LA"
                                                   = "United States", "Sheffield, England" = "UK", "Scotland" = "UK", "North Pole, AK" = "United States",
-                                                  "London" = "UK", "Chicago, IL"= "United States", "Córdoba/Spain" = "Spain",
+                                                  "London" = "UK", "Chicago, IL"= "United States", "C�rdoba/Spain" = "Spain",
                                                   "Florida, USA" = "United States", "London, UK" = "UK", "Sweden/Stockholm" = "Sweden",
                                                   "Caerphilly, South Wales, UK" = "UK", "Dallas, TX" = "United States", "Virginia, USA"
                                                   = "United States", "Deutschland" = "Germany", "NJ" = "Uniteód States", "Seattle, WA" = 
@@ -296,61 +318,19 @@ ps_loc_graph_proportional <-  re_playstation %>%
   mutate(percentage_of_tweets = n/sum(n)) %>%
   head(10) %>% #Shows 10 results
   ggplot(aes(x = location_rec,y = percentage_of_tweets)) +
-  geom_col(fill = "dark blue") + 
+  geom_col(fill = "#003087") + 
   #mutate(location_rec = reorder(location_rec,n)) %>%
   coord_flip() +
+  theme_minimal() +
   labs(x = "Top Locations",
        y = "Percentage of Tweets",
-       title = "PlayStation 5") + 
+       title = "PlayStation 5",caption = "Source: Data collected from Twitter's REST API via rtweet") + 
   theme(axis.text = element_text(size = 16, color = "black"), 
         axis.title = element_text(size = 16, color = "black"),
         title = element_text(size = 18)) +
   scale_y_continuous(labels = scales::percent)
 
-xbox_loc_graph_proportional <- re_xboxX %>%
-  filter(!location_rec %in% c("Worldwide", "A PLANET N OUTER SPACE <U+0001F30D><U+0001F30D>", "Born in Night City",
-                              "patreon.com/germanstrands", "Mistake Island", "Ragnarok", "Nirvana, Outer Space", "twitch.tv/xbmnetwork", "Earth", "/usr/optimus_code",
-                              "Everywhere & Nowhere", "Interwebs", "XBL", "Bad Vibes Forever")) %>%
-  count(location_rec, sort = TRUE) %>%  #Orders from most to least
-  mutate(location_rec = reorder(location_rec,n)) %>%
-  na.omit() %>%
-  mutate(percentage_of_tweets = n/sum(n)) %>%
-  head(10) %>% #Shows 10 results
-  ggplot(aes(x = location_rec,y = percentage_of_tweets)) +
-  geom_col(fill = "green") + 
-  #mutate(location_rec = reorder(location_rec,n)) %>%
-  coord_flip() +
-  labs(x = "Top Locations",
-       y = "Percentage of Tweets",
-       title = "Xbox Series X") + 
-  theme(axis.text = element_text(size = 16, color = "black"), 
-        axis.title = element_text(size = 16, color = "black"),
-        title = element_text(size = 18)) +
-  scale_y_continuous(labels = scales::percent)
-
-  
-xbox_loc_graph_proportional + ps_loc_graph_proportional
-#------------------------------------#
 #
-ps_loc_graph <- re_playstation %>%
-  filter(!location_rec %in% c("Worldwide", "A PLANET N OUTER SPACE <U+0001F30D><U+0001F30D>", "Born in Night City ",
-                              "patreon.com/germanstrands", "Mistake Island", "Ragnarok", "Nirvana, Outer Space", "twitch.tv/xbmnetwork", "Earth", "/usr/optimus_code",
-                              "Everywhere & Nowhere", "Interwebs", "XBL", "Bad Vibes Forever")) %>%
-  #This line filters out any joke locations or locations with strange values
-  count(location_rec, sort = TRUE) %>%  #Orders from most to least
-  mutate(location_rec = reorder(location_rec,n)) %>%
-  na.omit() %>% # remove NAs
-  head(10) %>% #Shows 10 results
-  ggplot(aes(x = location_rec,y = n)) +
-  geom_col(fill = "dark blue") + 
-  #mutate(location_rec = reorder(location_rec,n)) %>%
-  coord_flip() +
-  labs(x = "Top Locations",
-       y = "Number of Tweets",
-       title = "Locations of tweets mentioning the PlayStation 5") + 
-  theme(axis.text = element_text(size = 16, color = "black"), 
-        axis.title = element_text(size = 16, color = "black"),
-        title = element_text(size = 18))
 #                          
 
 #_____________________________________________________________________#
@@ -373,7 +353,7 @@ re_xboxX <- xbox_x_english %>% mutate(location_rec =
                                       "Calgary, Alberta" = "Canada", "Florida, USA" = "United States", "Ontario Canada" = "Canada",
                                       "Melbourne, Victoria" = "Australia", "Chicago, IL" = "United States", "London" = "UK", "Lafayette, LA"
                                       = "United States", "Sheffield, England" = "UK", "Scotland" = "UK", "North Pole, AK" = "United States",
-                                      "London" = "UK", "Chicago, IL"= "United States", "CÃ³rdoba/Spain" = "Spain",
+                                      "London" = "UK", "Chicago, IL"= "United States", "C�rdoba/Spain" = "Spain",
                                       "Florida, USA" = "United States", "London, UK" = "UK", "Sweden/Stockholm" = "Sweden",
                                       "Caerphilly, South Wales, UK" = "UK", "Dallas, TX" = "United States", "Virginia, USA"
                                       = "United States", "Deutschland" = "Germany", "NJ" = "United States", "Seattle, WA" = 
@@ -396,31 +376,36 @@ re_xboxX <- xbox_x_english %>% mutate(location_rec =
 #coming from
 
 
-
-xbox_loc_graph <- re_xboxX %>%
-  filter(!location_rec %in% c("Worldwide", "A PLANET N OUTER SPACE <U+0001F30D><U+0001F30D>", "Born in Night City ",
+xbox_loc_graph_proportional <- re_xboxX %>%
+  filter(!location_rec %in% c("Worldwide", "A PLANET N OUTER SPACE <U+0001F30D><U+0001F30D>", "Born in Night City",
                               "patreon.com/germanstrands", "Mistake Island", "Ragnarok", "Nirvana, Outer Space", "twitch.tv/xbmnetwork", "Earth", "/usr/optimus_code",
                               "Everywhere & Nowhere", "Interwebs", "XBL", "Bad Vibes Forever")) %>%
-  #This line filters out any joke locations or locations with strange values
-  count(location_rec, sort = TRUE) %>%  #Order from highest to lowest
+  count(location_rec, sort = TRUE) %>%  #Orders from most to least
   mutate(location_rec = reorder(location_rec,n)) %>%
-  na.omit() %>% # remove NAs
+  na.omit() %>%
+  mutate(percentage_of_tweets = n/sum(n)) %>%
   head(10) %>% #Shows 10 results
-  ggplot(aes(x = location_rec,y = n)) +
-  geom_col(fill = "Green") +
+  ggplot(aes(x = location_rec,y = percentage_of_tweets)) +
+  geom_col(fill = "#0e7a0d") + 
+  #mutate(location_rec = reorder(location_rec,n)) %>%
   coord_flip() +
+  theme_minimal() +
   labs(x = "Top Locations",
-       y = "Number of Tweets",
-       title = "Locations of tweets mentioning the Xbox Series X") + 
+       y = "Percentage of Tweets",
+       title = "Xbox Series X") + 
   theme(axis.text = element_text(size = 16, color = "black"), 
         axis.title = element_text(size = 16, color = "black"),
-        title = element_text(size = 18)) 
-  
+        title = element_text(size = 18)) +
+  scale_y_continuous(labels = scales::percent) 
 
 
-xbox_loc_graph + ps_loc_graph #Patchwork Lib lets you save graphs to variables and print them out right next too eachother
 
-#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++##
+#xboxColour:#0e7a0d
+#playstationColour: #003087
+
+xbox_loc_graph_proportional + ps_loc_graph_proportional #Patchwork Lib lets you save graphs to variables and print them out right next too eachother
+
++#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++##
 #____________________________Word Cloud (wc)_____________________________#
 ####_________________________Xbox___________________###
 
@@ -533,11 +518,13 @@ totals <- totals %>% filter(created_at >= as.Date('2020-10-27') & created_at < a
 #plot showing the number of posts by official marketing accounts
 #during the analysed period 
 totals %>% ggplot(aes(x = created_at, y = total_posts, color = screen_name)) +
-  geom_point() +
-  geom_line() +
-  scale_y_continuous() +   
+  geom_line(size = 1.25) +
+  scale_y_continuous() +  
+  theme_minimal() +
   labs(x = "Date", y = "Number of Tweets", color = "Console Twitter Account",
-      title = "Number of tweets the official Xbox and Playstation twitters posted") 
+      title = "Number of tweets the official Xbox and Playstation twitters posted", caption = "Source: Data collected from Twitter's REST API via rtweet") +
+  scale_color_manual(values = c("#00AFBB", "#E7B800")) 
+
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++##
 ##__________________________________________________Top ten most mentioned games(mg)_______________________________________________________##
 ##____________________________________________________________Fix Graph____________________________________________________________________##
@@ -615,8 +602,13 @@ for (i in 1:length(games$name)) {
 }
 
 launch_games_tweets <- do.call(rbind, games_by_volume_list)
+
+
 launch_games_tweets <- launch_games_tweets %>% group_by(game) %>%
-  mutate(tweet_count = n())
+mutate(tweet_count = n())
+
+alt_launch_games_tweets <- do.call(rbind,games_by_volume_list)
+alt_launch_games_tweets <- alt_launch_games_tweets %>% group_by(game)
 
 #dataframe now ready to use for further analysis 
 
@@ -625,11 +617,41 @@ launch_games_tweets <- launch_games_tweets %>% group_by(game) %>%
 launch_games_tweets %>% 
   ggplot(aes(x = reorder(game, -tweet_count))) +
   geom_bar(stat="count") +
+  theme_minimal() +
   theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2)) +
+
   labs(x = "Game", y = "Number of Tweets",
-       title = "Number of times a certain game was mentioned in a tweet",
+       title = "Number of mentions of games in the combined dataset",
        subtitle = "Twitter status (tweet) counts aggregated containing keywords",
        caption = "Source: Data collected from Twitter's REST API via rtweet")
+
+alt_test <- alt_launch_games_tweets %>%
+  mutate(platform = as.factor(platform))
+
+pal <- c("green", "blue", "yellow")
+
+
+alt_test %>%
+  count(game, sort = TRUE) %>%  #Orders from most to least
+  mutate(game = reorder(game,n)) %>%
+  head(10) %>% #Shows 10 results
+  ggplot(aes(stringr::str_wrap(game,10),n)) +
+  geom_col() + 
+  #coord_flip() +
+  theme_minimal() +
+  theme(axis.text.x = element_text( size = 9, hjust = 0.5, vjust = 0)) +
+  
+  labs(x = "",
+       y = "Number of Tweets",
+       title = "The top 10 games mentioned in the combined dataset",caption = "Source: Data collected from Twitter's REST API via rtweet") + 
+  theme(axis.text = element_text(size = 16, color = "black"), 
+        axis.title = element_text(size = 16, color = "black"),
+        title = element_text(size = 18)) 
+  #scale_x_discrete() 
+  #scale_fill_manual(limits = c("Playstation"))
+
+#
+#                          
 
 
 
@@ -683,9 +705,11 @@ game_sentiment_one_day <- game_sentiment_score %>% mutate(one_day_intervals = cu
 
 game_sentiment_one_day  %>% group_by(game) %>% ggplot(aes(x = one_day_intervals, y = avg_sentiment, color = game,
                                                           group = game)) +
-  geom_point() +
-  geom_line() +
-  theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2))
+  geom_line(size =0.75) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2)) +
+  labs(x = "Date", y = "Average Sentiment",color = "Game",
+       title = "Average sentiment of the top 10 talked about games", caption = "Source: Data collected from Twitter's REST API via rtweet")
 
 
 
@@ -697,16 +721,12 @@ game_sentiment_by_platform <- game_sentiment_score %>% mutate(one_day_intervals 
 
 game_sentiment_by_platform %>% ggplot(aes(x = one_day_intervals, y = avg_sentiment, color = platform,
                                                           group = platform)) +
-  geom_point() +
-  geom_line() +
-  theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2))
-
-
-
-
-
-
-
+  geom_line(size = 0.75) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2)) +
+  labs(x = "Date", y = "Average Sentiment",color = "Multiplatform",
+       title = "Average sentiment on console exclusive and multiplatform games", caption = "Source: Data collected from Twitter's REST API via rtweet")  +
+  scale_color_manual(values = c("#FFFF00", "#00AFBB", "#E7B800")) 
 
 
 
@@ -741,15 +761,16 @@ get_top_10
 get_top_102 <- filter(group,game %in% get_top_10$game)
 
 ggplot(get_top_102, aes(x = date, y = n, color = game)) +
-  geom_line(size = 1.5)+
-  labs(x = NULL, y = NULL, 
+  geom_line(size = 0.75)+
+  theme_minimal() +
+  labs(x = "Date", y = "Tweets", 
        title = "Frequency of Tweets of Games",
        subtitle = "Twitter status (tweet) counts aggregated using 1-days intervals",
        caption = "Source: Data collected from Twitter's REST API via rtweet")
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
 ####### Frequency of topics reagrds to console###
 
-topic_prep <- function(dataframe, regex){
+topic_prep <- function(dataframe, regex, name){
   
   dataframe$stripped_text <- gsub("http.*","", dataframe$text) #strip the text of links etc etc
   dataframe$stripped_text <- gsub("https.*","", dataframe$stripped_text)
@@ -758,19 +779,19 @@ topic_prep <- function(dataframe, regex){
   intermediate1 <- dataframe %>% select(stripped_text,created_at) %>% mutate(tweet_number = row_number()) #add tweet numbers to keep track
   
   #isolate the tweets containing the keyword from the dataframe, unnest the text into singular words and filter the stop words. 
-  intermediate2 <- intermediate1 %>% filter(grepl(regex, stripped_text, ignore.case = TRUE)) %>% mutate(topic = regex)
+  intermediate2 <- intermediate1 %>% filter(grepl(regex, stripped_text, ignore.case = TRUE)) %>% mutate(topic = name)
 }
 
 #search each keyword
-price_ps <- topic_prep(playstation_english, "price")
-hardware_ps <- topic_prep(playstation_english,"hardware")  
-design_ps <- topic_prep(playstation_english,"design")  
-game_ps <- topic_prep(playstation_english,"game")
+price_ps <- topic_prep(playstation_english, "price|cost", "Price")
+hardware_ps <- topic_prep(playstation_english,"hardware|ram|ssd|controller|processor|fps|rdna", "Hardware")  
+design_ps <- topic_prep(playstation_english,"design|fridge", "Design")  
+game_ps <- topic_prep(playstation_english,"game|games", "Game")
 
-price_xb <- topic_prep(xbox_x_english, "price")
-hardware_xb <- topic_prep(xbox_x_english,"hardware")  
-design_xb <- topic_prep(xbox_x_english,"design") 
-game_xb <- topic_prep(xbox_x_english,"game")
+price_xb <- topic_prep(xbox_x_english, "price|cost", "Price")
+hardware_xb <- topic_prep(xbox_x_english,"hardware|ram|ssd|controller|processor|fps|rdna", "Hardware")  
+design_xb <- topic_prep(xbox_x_english,"design|fridge", "Design")  
+game_xb <- topic_prep(xbox_x_english,"game|games", "Game")
 
 #combine data frames by console
 all_ps <- rbind(price_ps, hardware_ps, design_ps, game_ps)
@@ -785,30 +806,21 @@ all <- rbind(all_ps_1, within(all_xb_1, n <- -n))
 all$origin <- rep(c("all_ps_1", "all_xb_1"), each = nrow(all_ps_1))
 
 
-#psuedo log10
-ggplot(all, aes(n, topic, fill = origin)) +
-  geom_col() +
-  scale_x_continuous(trans = pseudolog10_trans, labels = abs, breaks = waiver()) + 
-  labs(x = NULL, y = NULL,
-       title = "Frequency of discussed topics regards to each console",
-       subtitle = "Twitter status (tweet) counts aggregated containing keywords",
-       caption = "Source: Data collected from Twitter's REST API via rtweet") +
-  scale_fill_manual(name = "Console", values = c("#6699FF", "#FF6699"), 
-                    labels = c("all_ps_1" = "Playstation 5", "all_xb_1" = "Xbox series X")) 
-
-
 #continous scaling
 ggplot(all, aes(n, topic, fill = origin)) +
   geom_col() +
   scale_x_continuous(labels = abs) +
+  theme_minimal() +
   labs(x = NULL, y = NULL,
        title = "Frequency of discussed topics regards to each console",
        subtitle = "Twitter status (tweet) counts aggregated containing keywords",
        caption = "Source: Data collected from Twitter's REST API via rtweet") +
-  scale_fill_manual(name = "Console", values = c("#6699FF", "#FF6699"), 
+  scale_fill_manual(name = "Console", values = c("#003087", "#0e7a0d"), 
                     labels = c("all_ps_1" = "Playstation 5", "all_xb_1" = "Xbox series X"))
 #topics as a proportion of tweets 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
+#xboxColour:#0e7a0d
+#playstationColour: #003087
 
 
 
