@@ -14,8 +14,10 @@ library(graphics)
 library(lubridate)
 library(ggallin)
 library(patchwork)
+library(scales)
+library(RColorBrewer)
 
-setwd("C://Users//ELISW//Documents//UNI//Data")
+setwd("C://Users//glumb/Documents/university/math513/coursework/presentation/csv_files")
 
 playstation_english <-  read_csv("playstation_tweets_english.csv", col_names = TRUE)
 xbox_x_english <-  read_csv("xboxseriesx_tweets_english.csv", col_names = TRUE)
@@ -98,8 +100,9 @@ sentiment_6_hour <- platform_sentiment %>% mutate(six_hour_intervals = cut.POSIX
 
 sentiment_6_hour  %>% group_by(platform) %>% ggplot(aes(x = six_hour_intervals, y = avg_sentiment, color = platform,
                                                         group = platform)) +
-  geom_point() +
-  geom_line() +
+  geom_point(size = 4) +
+  geom_line(size = 2) +
+  geom_smooth(method = "lm", se = FALSE) +
   theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2))
 
 
@@ -109,8 +112,9 @@ sentiment_by_hour <- platform_sentiment %>% group_by(platform, hour_of_day) %>%
   summarise(mean_sentiment = mean(score) )
 
 sentiment_by_hour %>% group_by(platform) %>% ggplot(aes(x = hour_of_day, y = mean_sentiment, color = platform)) +
-  geom_point() +
-  geom_line() +
+  geom_point(size = 3) +
+  geom_line(size = 2) +
+
   scale_x_continuous(breaks = seq(0:23))
 
 
@@ -124,47 +128,90 @@ console_sentiment_analysis_prep_nrc <- function(dataframe, inputtopic){
   dataframe$stripped_text <- gsub("amp","", dataframe$stripped_text)
   
   intermediate1 <- dataframe %>% select(stripped_text, created_at) %>% mutate(tweet_number = row_number()) %>%
-    unnest_tokens(word, stripped_text)
-  
+  unnest_tokens(word, stripped_text)
   intermediate2 <- intermediate1 %>% anti_join(stop_words) %>% anti_join(console_my_stop_words)
-  
+
   dataframe_sentiment <- intermediate2 %>%
     inner_join(get_sentiments("nrc"))
-  
+
   output <- dataframe_sentiment %>% mutate(platform = inputtopic)
-  
+
   
 }
 
-nrc_test_xbox <- console_sentiment_analysis_prep_nrc(xbox_x_english, "Xbox_X")
-nrc_test_playstation <- console_sentiment_analysis_prep_nrc(playstation_english, "Playstation")
+#takes a 4k sample from each twitter data set
+xbox_x_sample <- sample_n(xbox_x_english, 4000, replace = TRUE)
+playstation_sample <- sample_n(playstation_english, 4000, replace = TRUE)
+
+nrc_test_xbox <- console_sentiment_analysis_prep_nrc(xbox_x_sample, "Xbox_X")
+nrc_test_playstation <- console_sentiment_analysis_prep_nrc(playstation_sample, "Playstation")
 nrc_sentiment <- rbind(nrc_test_xbox, nrc_test_playstation)
 platform_f <- factor(nrc_sentiment$platform)
 nrc_sentiment <- nrc_sentiment %>% mutate(platform = platform_f)
 
-#nrc sentiment grouped in 6 hour intervals 
-nrc_sentiment_6_hour <- nrc_sentiment %>% mutate(six_hour_intervals = cut.POSIXt(created_at, breaks = "6 hours")) %>%
-  count(platform, sentiment, six_hour_intervals)
+#counts sentiment
+nrc_sentiment_1_day <- nrc_sentiment %>%
+  count(platform, sentiment)
 
-#too many data points tightly packed
-nrc_sentiment_6_hour %>% group_by(sentiment) %>% ggplot(aes(x = six_hour_intervals, y = n, color = sentiment, group = sentiment)) +
-  geom_point() +
-  
+#polar plot showing sentiment. random sample so different every time 
+nrc_sentiment_1_day %>% ggplot(aes(x = sentiment, y = n, group = platform, shape = platform, color = platform)) +
+  geom_point(size = 4) +
+  coord_polar() +
   scale_y_log10() +
-  theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2)) +
-  facet_wrap(~ platform)
+  geom_text(aes(label = n), size = 3, color = "black", vjust = -1) +
+  theme(
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank(),
+    plot.title = element_text(face = "bold", size = 16),
+    legend.title = element_text(face = "bold", size = 14),
+    axis.text.x = element_text(
+      face = "bold", size = 12, color = RColorBrewer:::brewer.pal(n = 6, "YlOrBr")[2:6]
+    ))
 
-#1 day intervals 
 
-nrc_sentiment_1_day <- nrc_sentiment %>% mutate(one_day_intervals = cut.POSIXt(created_at, breaks = "1 day")) %>%
-  count(platform, sentiment, one_day_intervals)
 
-nrc_sentiment_1_day %>% group_by(sentiment) %>% ggplot(aes(x = one_day_intervals, y = n, color = sentiment, group = sentiment)) +
-  geom_point() +
-  geom_line() +
-  scale_y_log10() +
-  theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2)) +
-  facet_wrap(platform ~sentiment)
+
+
+  # nrc_sentiment_1_day %>% group_by(sentiment) %>% ggplot(aes(x = one_day_intervals, y = n, color = sentiment, group = sentiment)) +
+#   geom_point() +
+#   geom_line() +
+#   scale_y_log10() +
+#   theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2)) +
+#   facet_wrap(platform ~sentiment)
+
+
+
+
+
+# nrc_test_xbox <- console_sentiment_analysis_prep_nrc(xbox_x_english, "Xbox_X")
+# nrc_test_playstation <- console_sentiment_analysis_prep_nrc(playstation_english, "Playstation")
+# nrc_sentiment <- rbind(nrc_test_xbox, nrc_test_playstation)
+# platform_f <- factor(nrc_sentiment$platform)
+# nrc_sentiment <- nrc_sentiment %>% mutate(platform = platform_f)
+# 
+# #nrc sentiment grouped in 6 hour intervals 
+# nrc_sentiment_6_hour <- nrc_sentiment %>% mutate(six_hour_intervals = cut.POSIXt(created_at, breaks = "6 hours")) %>%
+#   count(platform, sentiment, six_hour_intervals)
+# 
+# #too many data points tightly packed
+# nrc_sentiment_6_hour %>% group_by(sentiment) %>% ggplot(aes(x = six_hour_intervals, y = n, color = sentiment, group = sentiment)) +
+#   geom_point() +
+#   
+#   scale_y_log10() +
+#   theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2)) +
+#   facet_wrap(~ platform)
+# 
+# #1 day intervals 
+# 
+# nrc_sentiment_1_day <- nrc_sentiment %>% mutate(one_day_intervals = cut.POSIXt(created_at, breaks = "1 day")) %>%
+#   count(platform, sentiment, one_day_intervals)
+# 
+# nrc_sentiment_1_day %>% group_by(sentiment) %>% ggplot(aes(x = one_day_intervals, y = n, color = sentiment, group = sentiment)) +
+#   geom_point() +
+#   geom_line() +
+#   scale_y_log10() +
+#   theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2)) +
+#   facet_wrap(platform ~sentiment)
 
 
 
@@ -216,10 +263,10 @@ re_playstation <- playstation_english %>% mutate(location_rec =
                                                   "Calgary, Alberta" = "Canada", "Florida, USA" = "United States", "Ontario Canada" = "Canada",
                                                   "Melbourne, Victoria" = "Australia", "Chicago, IL" = "United States", "London" = "UK", "Lafayette, LA"
                                                   = "United States", "Sheffield, England" = "UK", "Scotland" = "UK", "North Pole, AK" = "United States",
-                                                  "London" = "UK", "Chicago, IL"= "United States", "CÃ³rdoba/Spain" = "Spain",
+                                                  "London" = "UK", "Chicago, IL"= "United States", "Córdoba/Spain" = "Spain",
                                                   "Florida, USA" = "United States", "London, UK" = "UK", "Sweden/Stockholm" = "Sweden",
                                                   "Caerphilly, South Wales, UK" = "UK", "Dallas, TX" = "United States", "Virginia, USA"
-                                                  = "United States", "Deutschland" = "Germany", "NJ" = "United States", "Seattle, WA" = 
+                                                  = "United States", "Deutschland" = "Germany", "NJ" = "Uniteód States", "Seattle, WA" = 
                                                     "United States", "Bari, Puglia" = "Italy", "New York" = "United States", "Ohio, USA"=
                                                     "United States", "England" = "UK", "Atlanta, GA" = "United States", "Washington, DC"
                                                   = "United States", "New Jersey, USA" = "United States", "Manchester, England" = "UK",
@@ -236,6 +283,54 @@ re_playstation <- playstation_english %>% mutate(location_rec =
 #coming from
 
 
+
+#proportional representation of locations by tweet 
+
+ps_loc_graph_proportional <-  re_playstation %>%
+  filter(!location_rec %in% c("Worldwide", "A PLANET N OUTER SPACE <U+0001F30D><U+0001F30D>", "Born in Night City",
+                              "patreon.com/germanstrands", "Mistake Island", "Ragnarok", "Nirvana, Outer Space", "twitch.tv/xbmnetwork", "Earth", "/usr/optimus_code",
+                              "Everywhere & Nowhere", "Interwebs", "XBL", "Bad Vibes Forever")) %>%
+  count(location_rec, sort = TRUE) %>%  #Orders from most to least
+  mutate(location_rec = reorder(location_rec,n)) %>%
+  na.omit() %>%
+  mutate(percentage_of_tweets = n/sum(n)) %>%
+  head(10) %>% #Shows 10 results
+  ggplot(aes(x = location_rec,y = percentage_of_tweets)) +
+  geom_col(fill = "dark blue") + 
+  #mutate(location_rec = reorder(location_rec,n)) %>%
+  coord_flip() +
+  labs(x = "Top Locations",
+       y = "Percentage of Tweets",
+       title = "PlayStation 5") + 
+  theme(axis.text = element_text(size = 16, color = "black"), 
+        axis.title = element_text(size = 16, color = "black"),
+        title = element_text(size = 18)) +
+  scale_y_continuous(labels = scales::percent)
+
+xbox_loc_graph_proportional <- re_xboxX %>%
+  filter(!location_rec %in% c("Worldwide", "A PLANET N OUTER SPACE <U+0001F30D><U+0001F30D>", "Born in Night City",
+                              "patreon.com/germanstrands", "Mistake Island", "Ragnarok", "Nirvana, Outer Space", "twitch.tv/xbmnetwork", "Earth", "/usr/optimus_code",
+                              "Everywhere & Nowhere", "Interwebs", "XBL", "Bad Vibes Forever")) %>%
+  count(location_rec, sort = TRUE) %>%  #Orders from most to least
+  mutate(location_rec = reorder(location_rec,n)) %>%
+  na.omit() %>%
+  mutate(percentage_of_tweets = n/sum(n)) %>%
+  head(10) %>% #Shows 10 results
+  ggplot(aes(x = location_rec,y = percentage_of_tweets)) +
+  geom_col(fill = "green") + 
+  #mutate(location_rec = reorder(location_rec,n)) %>%
+  coord_flip() +
+  labs(x = "Top Locations",
+       y = "Percentage of Tweets",
+       title = "Xbox Series X") + 
+  theme(axis.text = element_text(size = 16, color = "black"), 
+        axis.title = element_text(size = 16, color = "black"),
+        title = element_text(size = 18)) +
+  scale_y_continuous(labels = scales::percent)
+
+  
+xbox_loc_graph_proportional + ps_loc_graph_proportional
+#------------------------------------#
 #
 ps_loc_graph <- re_playstation %>%
   filter(!location_rec %in% c("Worldwide", "A PLANET N OUTER SPACE <U+0001F30D><U+0001F30D>", "Born in Night City ",
@@ -319,7 +414,8 @@ xbox_loc_graph <- re_xboxX %>%
        title = "Locations of tweets mentioning the Xbox Series X") + 
   theme(axis.text = element_text(size = 16, color = "black"), 
         axis.title = element_text(size = 16, color = "black"),
-        title = element_text(size = 18))
+        title = element_text(size = 18)) 
+  
 
 
 xbox_loc_graph + ps_loc_graph #Patchwork Lib lets you save graphs to variables and print them out right next too eachother
@@ -392,6 +488,22 @@ with(ps_clean_words_3,
                max.words = 500,
                random.order = FALSE, 
                colors = brewer.pal(8, "Dark2")))
+
+playstation_wordcloud <- with(ps_clean_words_3, 
+                              wordcloud(word, freq, 
+                                        min.freq = 1, 
+                                        max.words = 500,
+                                        random.order = FALSE, 
+                                        colors = brewer.pal(8, "Dark2")))
+
+xbox_worldcloud <- with(xbox_clean_words_3, 
+                        wordcloud(word, freq, 
+                                  min.freq = 1, 
+                                  max.words = 200,
+                                  random.order = FALSE, 
+                                  colors = brewer.pal(8, "Dark2")))
+
+
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++##
 ##__________________________________Bar charts that shows tweet volume of price and hardware_________________________________#####
 
@@ -483,23 +595,23 @@ games <- data.frame(name = game_name, genre = genre, keyword = keyword, platform
 
 
 #returns the filtered tweets based on games in a dataframe
-discussed_games_prep <- function(dataframe, regex, game_name, output_frame){
+discussed_games_prep <- function(dataframe, regex, title_platform, game_name, output_frame){
   
   dataframe$stripped_text <- gsub("http.*","", dataframe$text) #strip the text of links etc etc
   dataframe$stripped_text <- gsub("https.*","", dataframe$stripped_text)
   dataframe$stripped_text <- gsub("amp","", dataframe$stripped_text)
   
-  intermediate1 <- dataframe %>% select(stripped_text, platform, created_at) %>% mutate(tweet_number = row_number()) #add tweet numbers to keep track
+  intermediate1 <- dataframe %>% select(stripped_text, created_at) %>% mutate(tweet_number = row_number()) #add tweet numbers to keep track
   
   #isolate the tweets containing the keyword from the dataframe, unnest the text into singular words and filter the stop words. 
-  intermediate2 <- intermediate1 %>% filter(grepl(regex, stripped_text, ignore.case = TRUE)) %>% mutate(game = game_name)
+  intermediate2 <- intermediate1 %>% filter(grepl(regex, stripped_text, ignore.case = TRUE)) %>% mutate(game = game_name, platform = title_platform)
 }
 
 
 #search for tweets concerning all 41 games in the dataframe and return each as a list 
 games_by_volume_list <- list()
 for (i in 1:length(games$name)) {
-  games_by_volume_list[[i]] <- discussed_games_prep(mg_playstation_xbox_text, games$keyword[i], games$name[i])
+  games_by_volume_list[[i]] <- discussed_games_prep(mg_playstation_xbox_text, games$keyword[i], games$platform[i], games$name[i])
 }
 
 launch_games_tweets <- do.call(rbind, games_by_volume_list)
@@ -532,32 +644,32 @@ top10_tweets <- launch_games_tweets %>% filter(game %in% top10_filter$game)
 console_my_stop_words <- data.frame(word = c("playstation","ps5","PS5","xbox","gaming","games","game"))
 
 #unnest text to analyse 
-top10games_unnested <- top10_tweets %>% select(stripped_text, tweet_number, created_at) %>% unnest_tokens(word, stripped_text)
+top10games_unnested <- top10_tweets %>% select(stripped_text, tweet_number, created_at, platform) %>% unnest_tokens(word, stripped_text)
 
 #introduce stop words 
 top10games_sentiment <- top10games_unnested %>% anti_join(stop_words, by = c("word" = "word"))
-top10games_sentiment_2 <- top10games_sentiment %>%  anti_join(console_my_stop_words, by = c("word" = "word"))
+#top10games_sentiment_2 <- top10games_sentiment %>%  anti_join(console_my_stop_words, by = c("word" = "word"))
 
 #using binary sentiment library
-game_sentiment <- top10games_sentiment_2 %>%
+game_sentiment <- top10games_sentiment %>%
   inner_join(get_sentiments("bing")) %>%
   mutate(sentiment = ifelse(word == "hype", "positive", sentiment))
 
 #overall score per tweet with time included for more detailed analysis 
-game_sentiment_score <- game_sentiment %>% count(tweet_number, created_at, sentiment) %>%
+game_sentiment_score <- game_sentiment %>% count(tweet_number, created_at, platform, sentiment) %>%
   spread(sentiment, n, fill = 0) %>% mutate(score = positive - negative)
 
 
 #mean sentiment for each game
-mean_sentiment_game <- game_sentiment_score %>% group_by(game) %>% summarise(avg_sentiment = mean(score))
+mean_sentiment_game <- game_sentiment_score %>% group_by(game, platform) %>% summarise(avg_sentiment = mean(score))
 #cyberpunk held down by delay news that came out october 27th
 
 #multi variable t-test for the sentiments of each game 
 
 
-#sentiment of games every 6 hours
+#sentiment of games every 6 hours 
 game_sentiment_6_hour <- game_sentiment_score %>% mutate(six_hour_intervals = cut.POSIXt(created_at, breaks = "6 hours")) %>% 
-  group_by(game, six_hour_intervals) %>% summarise(avg_sentiment = mean(score))
+  group_by(game, six_hour_intervals, platform) %>% summarise(avg_sentiment = mean(score))
 
 game_sentiment_6_hour  %>% group_by(game) %>% ggplot(aes(x = six_hour_intervals, y = avg_sentiment, color = game,
                                                          group = game)) +
@@ -565,7 +677,7 @@ game_sentiment_6_hour  %>% group_by(game) %>% ggplot(aes(x = six_hour_intervals,
   geom_line() +
   theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2))
 
-#sentiment of games every day
+#sentiment of games every day 
 game_sentiment_one_day <- game_sentiment_score %>% mutate(one_day_intervals = cut.POSIXt(created_at, breaks = "1 day")) %>% 
   group_by(game, one_day_intervals) %>% summarise(avg_sentiment = mean(score))
 
@@ -577,11 +689,17 @@ game_sentiment_one_day  %>% group_by(game) %>% ggplot(aes(x = one_day_intervals,
 
 
 
+#average sentiment based on platform
+
+game_sentiment_by_platform <- game_sentiment_score %>% mutate(one_day_intervals = cut.POSIXt(created_at, breaks = "1 day")) %>% 
+  group_by(platform, one_day_intervals) %>% summarise(avg_sentiment = mean(score))
 
 
-
-
-
+game_sentiment_by_platform %>% ggplot(aes(x = one_day_intervals, y = avg_sentiment, color = platform,
+                                                          group = platform)) +
+  geom_point() +
+  geom_line() +
+  theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2))
 
 
 
@@ -601,13 +719,13 @@ game_sentiment_one_day  %>% group_by(game) %>% ggplot(aes(x = one_day_intervals,
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
 ###### Top 10 Games Keyword Contrast###
-launch_games_tweets <- do.call(rbind, games_by_volume_list)
 
 #change date formula as a variable
 date <- as.Date(as.POSIXct(launch_games_tweets$created_at, format = '%Y%M%D'))
 
 #ass the variable into the previous data frame
 add_date <- cbind(launch_games_tweets,date)
+add_date <- add_date %>% rename(date = ...7)
 
 #group_by games by date
 group <- add_date %>% group_by(game,date) %>% count()
@@ -623,7 +741,7 @@ get_top_10
 get_top_102 <- filter(group,game %in% get_top_10$game)
 
 ggplot(get_top_102, aes(x = date, y = n, color = game)) +
-  geom_line()+
+  geom_line(size = 1.5)+
   labs(x = NULL, y = NULL, 
        title = "Frequency of Tweets of Games",
        subtitle = "Twitter status (tweet) counts aggregated using 1-days intervals",
