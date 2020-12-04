@@ -690,17 +690,15 @@ mean_sentiment_game <- game_sentiment_score %>% group_by(game, platform) %>% sum
 
 #linear_regression model of sentiment of each game
 lm_sentiment <- lm(score ~ game, data = game_sentiment_score)
-anova(lm_sentiment)
 
-anova(lm_sentiment)$"Pr(>F)"[1]
+game_anova <- anova(lm_sentiment)$"Pr(>F)"[1]
 
 
 #follow-up test
 aov_sentiment <- aov(score ~ game, data = game_sentiment_score)
-summary(aov_sentiment)
 
 #discover how different of the sentiment of each game
-TukeyHSD(aov_sentiment)
+ game_turkey <- TukeyHSD(aov_sentiment)
 
 
 
