@@ -724,21 +724,57 @@ ggplot(top_10, aes(x = stringr::str_wrap(game,10), y = n, colour = platform, fil
 
 ## Sentiment for top 10 most discussed
 
+```{r, echo=FALSE, message=FALSE,warning=FALSE}
+#establish the top 10 discussed games by n- of tweets
+top10_filter <- launch_games_tweets %>% count(game) %>% arrange(desc(n)) %>% head(10)
+
+#filter tweet list to just have the top 10 games 
+top10_tweets <- launch_games_tweets %>% filter(game %in% top10_filter$game)
+console_my_stop_words <- data.frame(word = c("playstation","ps5","PS5","xbox","gaming","games","game"))
+
+#unnest text to analyse 
+top10games_unnested <- top10_tweets %>% select(stripped_text, tweet_number, created_at, platform) %>% unnest_tokens(word, stripped_text)
+
+#introduce stop words 
+top10games_sentiment <- top10games_unnested %>% anti_join(stop_words, by = c("word" = "word"))
+#top10games_sentiment_2 <- top10games_sentiment %>%  anti_join(console_my_stop_words, by = c("word" = "word"))
+
+#using binary sentiment library
+game_sentiment <- top10games_sentiment %>%
+  inner_join(get_sentiments("bing")) %>%
+  mutate(sentiment = ifelse(word == "hype", "positive", sentiment))
+
+#overall score per tweet with time included for more detailed analysis 
+game_sentiment_score <- game_sentiment %>% count(tweet_number, created_at, platform, sentiment) %>%
+  spread(sentiment, n, fill = 0) %>% mutate(score = positive - negative)
+
+#linear_regression model of sentiment of each game
+lm_sentiment <- lm(score ~ game, data = game_sentiment_score)
+
+anova_game <-anova(lm_sentiment)$"Pr(>F)"[1]
 
 
-Games                                                          p adj
----------------     ----------------------------------  ----------------
-Cyberpunk 2077      Assassin's Creed Valhalla                 0.0000068 
-Cyberpunk 2077      Call of Duty: Black Ops Cold War          0.0149662
-Gears 5             Call of Duty: Black Ops Cold War          0.0092674
-Fortnite            Cyberpunk 2077                            0.0000002
-Gears 5             Cyberpunk 2077                            0.0000000
-Halo: Infinite      Cyberpunk 2077                            0.0000011
-Marvel's Spider-Man Cyberpunk 2077                            0.0000600
-NBA 2K21            Cyberpunk 2077                            0.0019925
-Watch Dogs Legion   Cyberpunk 2077                            0.0000000
-Gears 5             Demon's Souls                             0.0017241
+#follow-up test
+aov_sentiment <- aov(score ~ game, data = game_sentiment_score)
 
+
+#discover how different of the sentiment of each game
+follow_up <-TukeyHSD(aov_sentiment)
+
+#discover how different of the sentiment of each game
+turkey_test <- TukeyHSD(aov_sentiment)
+
+#turn the list into dataframe
+df_turkey <- do.call(rbind,lapply(turkey_test, data.frame))
+
+#change the number of formula into decimal
+options(scipen=200)
+
+#filter the p-value which is less than 0.05
+filter_tuekry <- df_turkey %>% select(p.adj) %>% filter(p.adj < 0.05)
+
+kable(filter_tuekry, align="c")
+```
 
 ## Which platform are the most positives sentiments on
 
