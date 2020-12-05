@@ -35,19 +35,28 @@ console_my_stop_words <- data.frame(word = c("playstation","ps5","PS5","xbox","g
 
 
 
-## Introduction
+## Xbox Series X vs Playstation 5 
+
+<center>
+![](consoles.jpg)
+</center>
 
 
 ## Our Aims: 
 
-- Which console is more discussed, Xbox or PlayStation?
-- Which console do people prefer?
-- What is the most important factor when people choose which to buy? 
-- What are the strategies that each console use in the market?
-- Which kind of games are more preferable?
-- Which game is the most popular?
+- Which console is going to have the more successful launch and the highest sales?
+- What are the key factors that are going to influence a console purchase?
+- What changes can we recommend to Sony/Microsoft to increase their respective shares of the market?
 
-## Frequency of tweets containing #xbox and #Playstation
+## Background
+
+- Home console market is a $34 billion industry and is expected to grow to ~ \$52 billion by 2027.
+- Microsoft and Sony have been engaged in direct competition since 2001.
+- Differences between the platforms in previous generations have been large.
+- Differences between the platforms in the newest generation have been minimised and services offered have been largely homogenized
+
+
+## Frequency of Tweets Containing #XboxSeriesX and #Playstation5
 
 ```{r, echo = FALSE}
 tv_ps <- as.Date(as.POSIXct(playstation_english$created_at,format='%Y%M%D'))
@@ -79,7 +88,7 @@ ggplot() +
 ```
 
 
-## Locations of each tweet
+## Tweets by Location
 
 ```{r, echo=FALSE, error = FALSE,message= FALSE, error= FALSE}
 
@@ -264,7 +273,7 @@ total_sent_cons_average2 <- total_sent_cons_average %>% group_by(platform) %>% s
 
 
 
-## Sentiment analysis for xbox and PlayStation (inc. t-test)
+## Sentiment Analysis of Tweets Containing #XboxSeriesX and #Playstation5
 
 ```{r, echo=FALSE, messages = FALSE, warning = FALSE, error= FALSE}
 
@@ -284,7 +293,7 @@ tpval <- ttest$p.value
 The pvalue for the Xbox vs PlayStation T-Test is: `r tpval`
 
 
-## Sentiment over time
+## Sentiment Over Time
 
 
 ```{r, echo=FALSE, warning = FALSE, error= FALSE, message = FALSE}
@@ -412,7 +421,7 @@ nrc_sentiment_1_day %>% ggplot(aes(x = sentiment, y = n, group = platform, shape
 
 
 
-## Marketing Sentiment
+## Correlation between Marketing and Sentiment
 
 ```{r, echo=FALSE, warning = FALSE, error= FALSE, message=FALSE}
 platform_sentiment <- read_csv("platform_sentiment_by_tweet.csv")
@@ -482,7 +491,7 @@ sentiment_marketing_combined %>%
 
 ```
 
-## Wordclouds (xbox)
+## Wordcloud: #XboxSeriesX
 
 
 
@@ -524,7 +533,7 @@ with(xbox_clean_words_3,
 ```
   
 
-## Wordcloud (playstation)
+## Wordcloud: Playstation 5
 
 ```{r, echo=FALSE,warning = FALSE, message=FALSE}
 playstation_english$stripped_text <- gsub("https\\S*", "", playstation_english$text) 
@@ -561,7 +570,7 @@ with(ps_clean_words_3,
 
 ```
 
-## Bar chart tweets volume of price X Hardware
+## Volume of Tweets Containing Topic Keywords
 
 ```{r, echo=FALSE}
 
@@ -614,7 +623,7 @@ ggplot(all, aes(n, topic, fill = origin)) +
                     labels = c("all_ps_1" = "Playstation 5", "all_xb_1" = "Xbox series X"))
 ```
 
-## Barchart of most disscussed games
+## Most Discussed Games Within Tweet Data 
 
 ```{r,echo=FALSE}
 mg_playstation_english <- playstation_english %>% select(text,created_at) %>% mutate(platform = "Playstation")
@@ -657,17 +666,9 @@ keyword <- c("astro","Souls","spiderman","sackboy","bugsnax","godfall",
              "for honor", "fortnite", "just dance", "maneater", "mortal kombat", "nba", "observer",
              "coaster", "warhammer", "watchdogs", "yakuza")
 
-genre <- c("Platformer","Action RPG","Action-Adventure","Platformer","Adventure","Action RPG",
-           "Action-Adventure","Racing","Third-person Shooter","Strategy","Action Adventure","Platformer","First-person Shooter",
-           "Survival Horror","First-person Shooter","Puzzle","Puzzle","Puzzle",
-           "Action-Adventure","Action RPG","Simulator","Strategy", "First-person Shooter",
-           "Action RPG", "First-person Shooter", "Action RPG", "First-person Shooter", "Action-Adventure",
-           "Racing", "Fighting", "Third-person Shooter", "Musical", "Action-Adventure", "Fighting",
-           "Sport", "Horror", "Sim", "Hack and Slash", "Action-Adventure", "RPG", "n/a")
 
 
-
-games <- data.frame(name = game_name, genre = genre, keyword = keyword, platform = platform, stringsAsFactors = FALSE)
+games <- data.frame(name = game_name, keyword = keyword, platform = platform, stringsAsFactors = FALSE)
 
 
 #returns the filtered tweets based on games in a dataframe
@@ -764,7 +765,7 @@ game_sentiment_by_platform %>% ggplot(aes(x = one_day_intervals, y = avg_sentime
 
 ```
 
-## Sentiment for top 10 most discussed
+## Sentiment Analysis of the Most Discussed Games 
 
 ```{r, echo=FALSE }
 lm_sentiment <- lm(score ~ game, data = game_sentiment_score)
@@ -796,11 +797,23 @@ Gears 5             Demon's Souls                             0.0017241
 
 
 
-## Recommendation
+## Conclusions 
 
-## Conclusion 
+- Our data suggests that Xbox is likely to have a more successful launch.
+- Games will have the largest influence on the success of the console this generation over other factors that dominated discussion in previous generations.
+- Sony must keep pace with Microsoft in offering enticing exclusive intellectual properties and would possibly benefit from supplying them in a similar manner to the Xbox Game Pass.
+- Both companies may benefit from changing their marketing practices and improving the consistency of their social media presence.
+
 
 ## Limitations
+
+- Our dataset is dedicated to English language posts on a western platform.
+- Lack of Geodata in our tweets limits our ability to identify markets and develop more specific insights.
+- Our marketing-sentiment correlation model could be improved and produce more informative results if we introduced more variables.
+- Sentiment seems to be highly affected by intersecting topics such as game releases and delays.
+- Launch success will likely be influenced by supply chain issues stemming from the global pandemic which is not accounted for in our analysis. 
+
+## References 
 
 
 
