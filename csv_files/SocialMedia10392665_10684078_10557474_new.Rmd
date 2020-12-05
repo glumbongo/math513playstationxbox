@@ -777,25 +777,23 @@ game_anova <- anova(lm_sentiment)$"Pr(>F)"[1]
 aov_sentiment <- aov(score ~ game, data = game_sentiment_score)
 
 #discover how different of the sentiment of each game
- game_turkey <- TukeyHSD(aov_sentiment)
+follow_up <-TukeyHSD(aov_sentiment)
 
+#discover how different of the sentiment of each game
+turkey_test <- TukeyHSD(aov_sentiment)
+
+#turn the list into dataframe
+df_turkey <- do.call(rbind,lapply(turkey_test, data.frame))
+
+#change the number of formula into decimal
+options(scipen=200)
+
+#filter the p-value which is less than 0.05
+filter_tuekry <- df_turkey %>% select(p.adj) %>% filter(p.adj < 0.05)
+
+kable(filter_tuekry, align="c")
 
 ```
-
-Games                                                          p adj
----------------     ----------------------------------  ----------------
-Cyberpunk 2077      Assassin's Creed Valhalla                 0.0000068 
-Cyberpunk 2077      Call of Duty: Black Ops Cold War          0.0149662
-Gears 5             Call of Duty: Black Ops Cold War          0.0092674
-Fortnite            Cyberpunk 2077                            0.0000002
-Gears 5             Cyberpunk 2077                            0.0000000
-Halo: Infinite      Cyberpunk 2077                            0.0000011
-Marvel's Spider-Man Cyberpunk 2077                            0.0000600
-NBA 2K21            Cyberpunk 2077                            0.0019925
-Watch Dogs Legion   Cyberpunk 2077                            0.0000000
-Gears 5             Demon's Souls                             0.0017241
-
-
 
 ## Conclusions 
 
