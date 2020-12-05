@@ -1,0 +1,80 @@
+Introduction/ Aims
+-	We are looking at tweet data regarding the upcoming release of the new home video game console platforms from Microsoft and Sony.
+-	Our initial data consisted of tweets with the hashtags #xboxseriesx and #playstation5  between 27th October and 5th November.
+-	We took further data from the official playstation and xbox twitter accounts within the same time period as our analysis developed. 
+-	Aim 1: attempt to predict the success of the respective console launches and determine which console is likely to be dominant over the next few years
+-	Aim 2: attempt to identify the key factors that will determine the purchase of a console in this coming generation 
+-	Aim 3: Develop recommendations that Sony and Microsoft could follow in order to improve their position in the market 
+Exposition slide
+-	Console wars began in earnest between Microsoft and sony in 2007 with the release of the Xbox360 and Playstation 3
+-	There were huge differences in the console hardware, architecture, and price. 
+-	The PS3 was $200 more expensive at release – likely due to a built in bluray player
+-	The two companies championed different hd video formats, with playstation winning with bluray
+-	Xbox360 had a hardware failure known as the Red Ring of Death 
+-	These were the factors that contributed to playstation winning the generation after a bad start
+-	Xbox one was  $100 more expensive than ps4 on launch
+-	Xbone and ps4 almost identical in hardware,
+-	Generation was defined by ps4 and 
+-	Addressed hardware issues by releasing new consoles halfway through the last gen 
+-	This generation is far more even than any generation before in terms of hardware, pricepoints, gaming exclusives 
+Frequency of tweets using xbox series x and playstation 5 
+-	Xbox is talked about more on English language twitter 
+-	Rate of discussion is more volatile for the xbox 
+-	Suggests that xbox is more popular 
+
+Tweet location 
+-	Broadly similar percentage of discussion across countries
+-	Discussion of playstation in the uk is ~ 2%higher 
+-	No clear  bias in any country. Proportional discussion is largely the same 
+
+Average sentiment over time for xbox and playstation tweets
+-	Average sentiment for both brands is positive the majority of the time
+-	Average sentiment for xbox is higher at all times 
+-	Average sentiment for playstation is increasing at a faster rate 
+-	Suggests Xbox average sentiment is higher and suggests that xbox will perform better than playstation at release
+-	Suggests that there is an underlying issue shared by both platforms that causes a change in sentiment
+
+Emotional sentiment averages
+-	4000 tweet sample taken from each platform
+-	Xbox is ahead on everything, indicating that tweets about xbox generally invoke stronger emotions
+
+Marketing/sentiment correlation
+
+-	Total posts previous day to check for a relationship between platform marketing and a positive sentimental response (better to do next day even though twitter is a very reactive platform) 
+-	No statistically significant correlation between marketing and sentiment 
+-	There are other variables affecting the average sentiment of playstation and xbox in our data
+-	Both platforms are not posting evenly and consistently throughout the day. A more consistent presence may be better 
+
+Wordclouds
+
+-	Most common words involve games or gaming (obviously)
+-	Discussion of hardware (controller, rdna2 chipset, 60fps, 4k)
+-	Xbox Fridge discussion – at first confused, investigate later 
+
+Frequency of discussed topics
+-	Games dominate discussion
+-	Hardware is being discussed, but price is a non issue
+-	Design is mentioned a lot for xbox. Comparison to fridge. 
+
+
+Launch games mentions
+-	2 playstation & 2 xbox exclusives, 6  multi
+-	Multiplats are the most talked about games. This makes sense owing to their universal appeal 
+-	2 of the xbox exclusives will be offered on xbox game pass, a subscription service but the playstation exclusives are not available on their service 
+
+Game sentiment 
+-	Average sentiment table gives us insight into the highest sentiment games
+-	Xbox exclusives have much higher positive sentiment than multiplatform or ps5 games 
+
+Conclusions
+-	Judging by our data, xbox has the higher chance of being the more successful launch. Average sentiment is higher, average sentiment of their exclusive games are higher. Xbox is being talked about more in the English speaking world. 
+-	Exclusive games will have a large influence on console success, focus should be given to securing exclusive intellectual properties. 
+-	Sony should pursue a better subscription service that is on par with xbox. Xbox are putting new AAA releases on their gamepass immediately.
+
+Limitations
+-	Our dataset only covers English tweets. Could improve location coverage by using sentiment libraries for multiple languages. Example: Japan market will likely be dominated by sony but we can’t include this in our analysis of console success
+-	Huge lack of geodata in our tweets limits our ability to map the regions from which sentiments are coming from. 
+-	Other factors outside of customer interest will influence success. Covid pandemic has made supply an issue 
+
+-	Our marketing model could include marketing data from other sources such as game studios in order to better model the relationship between sentiment and marketing
+-	Sentiment seems to be highly affected by the release schedule of games that have been stacked against the release of the consoles within our analysed period
