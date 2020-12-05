@@ -285,10 +285,10 @@ re_playstation <- playstation_english %>% mutate(location_rec =
                                                   "Calgary, Alberta" = "Canada", "Florida, USA" = "United States", "Ontario Canada" = "Canada",
                                                   "Melbourne, Victoria" = "Australia", "Chicago, IL" = "United States", "London" = "UK", "Lafayette, LA"
                                                   = "United States", "Sheffield, England" = "UK", "Scotland" = "UK", "North Pole, AK" = "United States",
-                                                  "London" = "UK", "Chicago, IL"= "United States", "C�rdoba/Spain" = "Spain",
+                                                  "London" = "UK", "Chicago, IL"= "United States", "Córdoba/Spain" = "Spain",
                                                   "Florida, USA" = "United States", "London, UK" = "UK", "Sweden/Stockholm" = "Sweden",
                                                   "Caerphilly, South Wales, UK" = "UK", "Dallas, TX" = "United States", "Virginia, USA"
-                                                  = "United States", "Deutschland" = "Germany", "NJ" = "Uniteód States", "Seattle, WA" = 
+                                                  = "United States", "Deutschland" = "Germany", "NJ" = "UniteÃ³d States", "Seattle, WA" = 
                                                     "United States", "Bari, Puglia" = "Italy", "New York" = "United States", "Ohio, USA"=
                                                     "United States", "England" = "UK", "Atlanta, GA" = "United States", "Washington, DC"
                                                   = "United States", "New Jersey, USA" = "United States", "Manchester, England" = "UK",
@@ -353,7 +353,7 @@ re_xboxX <- xbox_x_english %>% mutate(location_rec =
                                       "Calgary, Alberta" = "Canada", "Florida, USA" = "United States", "Ontario Canada" = "Canada",
                                       "Melbourne, Victoria" = "Australia", "Chicago, IL" = "United States", "London" = "UK", "Lafayette, LA"
                                       = "United States", "Sheffield, England" = "UK", "Scotland" = "UK", "North Pole, AK" = "United States",
-                                      "London" = "UK", "Chicago, IL"= "United States", "C�rdoba/Spain" = "Spain",
+                                      "London" = "UK", "Chicago, IL"= "United States", "Córdoba/Spain" = "Spain",
                                       "Florida, USA" = "United States", "London, UK" = "UK", "Sweden/Stockholm" = "Sweden",
                                       "Caerphilly, South Wales, UK" = "UK", "Dallas, TX" = "United States", "Virginia, USA"
                                       = "United States", "Deutschland" = "Germany", "NJ" = "United States", "Seattle, WA" = 
@@ -698,7 +698,16 @@ game_anova <- anova(lm_sentiment)$"Pr(>F)"[1]
 aov_sentiment <- aov(score ~ game, data = game_sentiment_score)
 
 #discover how different of the sentiment of each game
- game_turkey <- TukeyHSD(aov_sentiment)
+turkey_test <- TukeyHSD(aov_sentiment)
+
+#turn the list into dataframe
+df_turkey <- do.call(rbind,lapply(turkey_test, data.frame))
+
+#change the number of formula into decimal
+options(scipen=200)
+
+#filter the p-value which is less than 0.05
+filter_tuekry <- df_turkey %>% select(p.adj) %>% filter(p.adj < 0.05)
 
 
 
