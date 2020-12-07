@@ -17,7 +17,7 @@ library(patchwork)
 library(scales)
 library(RColorBrewer)
 
-setwd("C://Users//ELISW//Documents//UNI//Data")
+setwd("C://Users//glumb/Documents/university/math513/coursework/presentation/csv_files/")
 
 playstation_english <-  read_csv("playstation_tweets_english.csv", col_names = TRUE)
 xbox_x_english <-  read_csv("xboxseriesx_tweets_english.csv", col_names = TRUE)
@@ -105,6 +105,9 @@ platform_sentiment <- platform_sentiment %>% mutate(platform = platform_f, hour_
 
 sentiment_6_hour <- platform_sentiment %>% mutate(six_hour_intervals = cut.POSIXt(created_at, breaks = "6 hours")) %>% 
   group_by(platform, six_hour_intervals) %>% summarise(avg_sentiment = mean(score))
+sentiment_6_hour <- sentiment_6_hour %>% mutate(six_hour_intervals = as.POSIXct(six_hour_intervals))
+
+str(sentiment_6_hour)
 
 sentiment_6_hour  %>% group_by(platform) %>% ggplot(aes(x = six_hour_intervals, y = avg_sentiment, color = platform,
                                                         group = platform)) +
@@ -114,7 +117,8 @@ sentiment_6_hour  %>% group_by(platform) %>% ggplot(aes(x = six_hour_intervals, 
   theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2)) +
   labs(x = "Time (in 6 hour intervals)", y = "Average Sentiment", color = "Platform",
        title = "Average sentiment of offical box and Playstation twitter accounts", caption = "Source: Data collected from Twitter's REST API via rtweet") +
-       scale_color_manual(values = c("#00AFBB", "#E7B800")) 
+       scale_color_manual(values = c("#00AFBB", "#E7B800")) +
+  geom_hline(yintercept=0, linetype="dashed", color = "red")
 
 
 #totals %>% ggplot(aes(x = created_at, y = total_posts, color = screen_name)) +
@@ -161,6 +165,36 @@ console_sentiment_analysis_prep_nrc <- function(dataframe, inputtopic){
 
   
 }
+
+
+#bootstrap test
+
+B <- 10
+n  <- 4000
+
+S <- as.data.frame(replicate(10, {
+  xbox_x_sample <- sample_n(xbox_x_english, 4000, replace = TRUE)
+  playstation_sample <- sample_n(playstation_english, 4000, replace = TRUE)
+  
+  nrc_test_xbox <- console_sentiment_analysis_prep_nrc(xbox_x_sample, "Xbox_X")
+  nrc_test_playstation <- console_sentiment_analysis_prep_nrc(playstation_sample, "Playstation")
+  nrc_sentiment <- rbind(nrc_test_xbox, nrc_test_playstation)
+  platform_f <- factor(nrc_sentiment$platform)
+  nrc_sentiment <- nrc_sentiment %>% mutate(platform = platform_f)
+  
+  #counts sentiment
+  nrc_sentiment_1_day <- nrc_sentiment %>%
+    count(platform, sentiment)
+}))
+
+for (i in 1:B) {
+  mean_emotions <- unlist(S[3,i])
+}
+
+mean_emotions <- unlist(S[3,1])
+
+test <- mean_emotions$n
+
 
 #takes a 4k sample from each twitter data set
 xbox_x_sample <- sample_n(xbox_x_english, 4000, replace = TRUE)
