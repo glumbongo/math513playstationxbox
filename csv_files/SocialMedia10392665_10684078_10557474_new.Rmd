@@ -150,7 +150,7 @@ ps_loc_graph_proportional <-  re_playstation %>%
   theme(axis.text = element_text(size = 16, color = "black"), 
         axis.title = element_text(size = 16, color = "black"),
         title = element_text(size = 18)) +
-  scale_y_continuous(labels = scales::percent)
+  scale_y_continuous(labels = scales::percent, limits = c(0,.20))
 
 #
 #                          
@@ -537,7 +537,7 @@ with(xbox_clean_words_3,
 ```
   
 
-## Wordcloud: Playstation 5
+## Wordcloud: #Playstation5
 
 ```{r, echo=FALSE,warning = FALSE, message=FALSE}
 playstation_english$stripped_text <- gsub("https\\S*", "", playstation_english$text) 
