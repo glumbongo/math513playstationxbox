@@ -25,6 +25,7 @@ library(lubridate)
 library(ggallin)
 library(patchwork)
 library(knitr)
+library(ggrepel)
 
 
 
@@ -290,7 +291,7 @@ ttest <- t.test(score ~platform, data = platform_sentiment, var.equal = TRUE)
 tpval <- ttest$p.value
 
 ```
-The p.value for significant difference between Xbox and Playstation sentiment is: `r tpval`
+The p.value of a t-test comparing Xbox and Playstation sentiment is: `r tpval`
 
 
 ## Sentiment Over Time
@@ -408,7 +409,7 @@ nrc_sentiment_1_day %>% ggplot(aes(x = sentiment, y = n, group = platform, shape
   coord_polar() +
   scale_y_log10() +
   theme_minimal() +
-  geom_text(aes(label = n), size = 3, color = "black", vjust = -1) +
+  geom_text_repel(aes(label = n), size = 3, color = "black", vjust = -1, force = 2) +
   labs(x = "Sentiment", y = "", color = "Platform", shape = "Platform", caption = "Source: Data collected from Twitter's REST API via rtweet")
   theme(
     axis.text.y = element_blank(),
