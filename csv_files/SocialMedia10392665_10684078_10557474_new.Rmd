@@ -1,5 +1,5 @@
 ---
-title: "An analysis on the next genetation on home consoles "
+title: "An Analysis of the Next Generation of Home Video Game Consoles"
 author: "10392665, 10684078, 10557474"
 output: beamer_presentation
 
@@ -42,7 +42,7 @@ console_my_stop_words <- data.frame(word = c("playstation","ps5","PS5","xbox","g
 </center>
 
 
-## Our Aims: 
+## Our Aims 
 
 - Which console is going to have the more successful launch and the highest sales?
 - What are the key factors that are going to influence a console purchase?
@@ -53,7 +53,7 @@ console_my_stop_words <- data.frame(word = c("playstation","ps5","PS5","xbox","g
 - Home console market is a $34 billion industry and is expected to grow to ~ \$52 billion by 2027.
 - Microsoft and Sony have been engaged in direct competition since 2001.
 - Differences between the platforms in previous generations have been large.
-- Differences between the platforms in the newest generation have been minimised and services offered have been largely homogenized
+- Differences between the platforms in the newest generation have been minimised and services offered have been largely homogenized.
 
 
 ## Frequency of Tweets Containing #XboxSeriesX and #Playstation5
@@ -282,7 +282,7 @@ total_sent_cons_average2 <- total_sent_cons_average %>% group_by(platform) %>% s
 
 kable(total_sent_cons_average2, 
       align = c("c", "r"), 
-      col.names = c("Xbox", "Playstation"),
+      col.names = c("Platform", "Average Sentiment"),
       caption = "Average Sentiments")
 
 
@@ -290,7 +290,7 @@ ttest <- t.test(score ~platform, data = platform_sentiment, var.equal = TRUE)
 tpval <- ttest$p.value
 
 ```
-The pvalue for the Xbox vs PlayStation T-Test is: `r tpval`
+The p.value for significant difference between Xbox and Playstation sentiment is: `r tpval`
 
 
 ## Sentiment Over Time
@@ -344,6 +344,7 @@ platform_sentiment <- platform_sentiment %>% mutate(platform = platform_f, hour_
 
 sentiment_6_hour <- platform_sentiment %>% mutate(six_hour_intervals = cut.POSIXt(created_at, breaks = "6 hours")) %>% 
   group_by(platform, six_hour_intervals) %>% summarise(avg_sentiment = mean(score))
+sentiment_6_hour <- sentiment_6_hour %>% mutate(six_hour_intervals = as.POSIXct(six_hour_intervals))
 
 sentiment_6_hour  %>% group_by(platform) %>% ggplot(aes(x = six_hour_intervals, y = avg_sentiment, color = platform,
                                                         group = platform)) +
@@ -353,7 +354,9 @@ sentiment_6_hour  %>% group_by(platform) %>% ggplot(aes(x = six_hour_intervals, 
   theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2)) +
   labs(x = "Time (in 6 hour intervals)", y = "Average Sentiment", color = "Platform",
        title = "Average sentiment of tweets containing #Playstation and #Xbox", caption = "Source: Data collected from Twitter's REST API via rtweet") +
-       scale_color_manual(values = c("#003087", "#0e7a0d"))
+       scale_color_manual(values = c("#003087", "#0e7a0d")) +
+  geom_hline(yintercept=0, linetype="dashed", color = "red")
+
 total_sent_cons_average2 <- total_sent_cons_average %>% group_by(platform) %>% summarise(avg_sentiment = mean(score))
 ```
  
@@ -421,7 +424,7 @@ nrc_sentiment_1_day %>% ggplot(aes(x = sentiment, y = n, group = platform, shape
 
 
 
-## Correlation between Marketing and Sentiment
+## Correlation Between Marketing and Sentiment
 
 ```{r, echo=FALSE, warning = FALSE, error= FALSE, message=FALSE}
 platform_sentiment <- read_csv("platform_sentiment_by_tweet.csv")
@@ -486,7 +489,8 @@ sentiment_marketing_combined %>%
   theme_minimal() +
   geom_smooth(method = "lm", se = FALSE) +
   facet_wrap(~platform, scales = "free") +
-  labs(y = "Average Sentiment", x = "Post by accounts on previous day", color = "Platform", title = "How sentiment correlate to the offical accounts posting")
+  labs(y = "Average Sentiment", x = "Post by Accounts on Previous Day", color = "Platform", title = "Correlation of Average Sentiment and Number of Posts by Official Marketing Accounts") +
+  theme(legend.position = "none")
 
 
 ```
@@ -589,13 +593,13 @@ topic_prep <- function(dataframe, regex, name){
 #search each keyword
 price_ps <- topic_prep(playstation_english, "price|cost", "Price")
 hardware_ps <- topic_prep(playstation_english,"hardware|ram|ssd|controller|processor|fps|rdna", "Hardware")  
-design_ps <- topic_prep(playstation_english,"design|fridge", "Design")  
-game_ps <- topic_prep(playstation_english,"game|games", "Game")
+design_ps <- topic_prep(playstation_english,"design|fridge", "Design (including 'fridge')")  
+game_ps <- topic_prep(playstation_english,"game|games", "Games")
 
 price_xb <- topic_prep(xbox_x_english, "price|cost", "Price")
 hardware_xb <- topic_prep(xbox_x_english,"hardware|ram|ssd|controller|processor|fps|rdna", "Hardware")  
-design_xb <- topic_prep(xbox_x_english,"design|fridge", "Design")  
-game_xb <- topic_prep(xbox_x_english,"game|games", "Game")
+design_xb <- topic_prep(xbox_x_english,"design|fridge", "Design (including 'fridge')")  
+game_xb <- topic_prep(xbox_x_english,"game|games", "Games")
 
 #combine data frames by console
 all_ps <- rbind(price_ps, hardware_ps, design_ps, game_ps)
@@ -616,8 +620,8 @@ ggplot(all, aes(n, topic, fill = origin)) +
   scale_x_continuous(labels = abs) +
   theme_minimal() +
   labs(x = NULL, y = NULL,
-       title = "Frequency of discussed topics regards to each console",
-       subtitle = "Twitter status (tweet) counts aggregated containing keywords",
+       title = "Frequency of Discussed Topics for Each Console",
+       subtitle = "Tweets aggregated by keywords",
        caption = "Source: Data collected from Twitter's REST API via rtweet") +
   scale_fill_manual(name = "Console", values = c("#003087", "#0e7a0d"), 
                     labels = c("all_ps_1" = "Playstation 5", "all_xb_1" = "Xbox series X"))
@@ -706,13 +710,13 @@ alt_test <- alt_launch_games_tweets %>%
 group_game <- alt_test %>% group_by(game,platform) %>% count()
 top_10 <- group_game %>% arrange(desc(n)) %>% head(10)
 
-ggplot(top_10, aes(x = stringr::str_wrap(game,10), y = n, colour = platform, fill = platform)) +
+ggplot(top_10, aes(x = reorder(stringr::str_wrap(game,10),-n), y = n, colour = platform, fill = platform)) +
   geom_col()+
   theme_minimal() +
   theme(axis.text.x = element_text( size = 9, hjust = 0.5, vjust = 0)) +
   labs(x = "",
        y = "Number of Tweets",
-       title = "The top 10 games mentioned in the combined dataset",caption = "Source: Data collected from Twitter's REST API via rtweet") + 
+       title = "Top 10 Games Mentioned in the Combined Dataset",caption = "Source: Data collected from Twitter's REST API via rtweet") + 
   theme(axis.text = element_text(size = 16, color = "black"), 
         axis.title = element_text(size = 16, color = "black"),
         title = element_text(size = 18)) +
@@ -722,7 +726,7 @@ ggplot(top_10, aes(x = stringr::str_wrap(game,10), y = n, colour = platform, fil
 
 
 
-## Which platform are the most positives sentiments on
+## Game Sentiment by Platform
 
 
 ```{r, echo=FALSE, message=FALSE, warning = FALSE, error= FALSE}
@@ -747,10 +751,13 @@ game_sentiment <- top10games_sentiment %>%
 
 #overall score per tweet with time included for more detailed analysis 
 game_sentiment_score <- game_sentiment %>% count(tweet_number, created_at, platform, sentiment) %>%
-  spread(sentiment, n, fill = 0) %>% mutate(score = positive - negative)
+  spread(sentiment, n, fill = 0) 
+game_sentiment_score <- game_sentiment_score %>% mutate(score = positive - negative)
 
 game_sentiment_by_platform <- game_sentiment_score %>% mutate(one_day_intervals = cut.POSIXt(created_at, breaks = "1 day")) %>% 
   group_by(platform, one_day_intervals) %>% summarise(avg_sentiment = mean(score))
+game_sentiment_by_platform <- game_sentiment_by_platform %>%
+  mutate(one_day_intervals = as.POSIXct(one_day_intervals))
 
 
 game_sentiment_by_platform %>% ggplot(aes(x = one_day_intervals, y = avg_sentiment, color = platform,
@@ -759,13 +766,13 @@ game_sentiment_by_platform %>% ggplot(aes(x = one_day_intervals, y = avg_sentime
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 90, size = 7, hjust = 1, vjust = 0.2)) +
   labs(x = "Date", y = "Average Sentiment",color = "Multiplatform",
-       title = "Average sentiment on console exclusive and multiplatform games", caption = "Source: Data collected from Twitter's REST API via rtweet")  +
+       title = "Daily Average Sentiment of Games by Platform", caption = "Source: Data collected from Twitter's REST API via rtweet")  +
   scale_color_manual(values = c("#FF0000", "#003087", "#0e7a0d")) 
 
 
 ```
 
-## Sentiment Analysis of the Most Discussed Games 
+## Games With Significant Difference in Average Sentiment 
 
 ```{r, echo=FALSE }
 lm_sentiment <- lm(score ~ game, data = game_sentiment_score)
@@ -813,5 +820,10 @@ kable(filter_tuekry, align="c")
 
 ## References 
 
-
-
+- McDermott, J. (2013) ‘Xbox, Playstation gear up for bruising ad-spending battle’, Advertising Age, 84(24), p. 6
+- Bulik, B. S. (2007) ‘Playstation, Xbox Regroup After Being Waxed by Wii’, Advertising Age, 78(28), pp. 3–35
+- FBI102420 (2020) 'Gaming Console Market Size, Share & Industry Analysis, By Type (Home Consoles and Handheld Console (Portable and Non-Portable)), By End-use (Residential and Commercial), By Applications (Gaming and Non-Gaming), and Region Forecast, 2020-2027', Fortune Business Insights
+- 'Console Wars, Video Games (24-03-2007), The Economist (London), Vol.382 (8521), p.74
+- Browning, Kellen; Lohr, Steve (September 21, 2020). 'Microsoft Grabs Some of World's Biggest Games in $7.5 Billion Deal', The New York Times
+- 'Playstation 5 v Xbox Series X' (07-11-2020), The Economist (London)
+- Michael Andronico (21-10-2019), 'PS4 vs. Xbox One: Which Console Is Right For You?', TWICE, Vol.34 (17), p.10-11
